@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class PlayerScriptChiliGame : MonoBehaviour
 {
     [SerializeField]
-    private BoxCollider2D collider;
-    [SerializeField]
     private Text countText;
     [SerializeField]
     private float moveSpeed;
@@ -23,6 +21,7 @@ public class PlayerScriptChiliGame : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+        countText.text = "Score: " + count;
     }
 
     private void Move()
