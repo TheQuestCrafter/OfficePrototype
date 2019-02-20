@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
@@ -15,28 +17,55 @@ public class Spawner : MonoBehaviour
     private int spawnX=7;
     [SerializeField]
     Transform spawnerPoint;
+    [SerializeField]
+    Text text;
+    [SerializeField]
+    PlayerScriptChiliGame player = new PlayerScriptChiliGame();
+    [SerializeField]
+    private int minWinAmount = 8;
 
+    private GlobalInformation GM = new GlobalInformation();
     private System.Random random;
     private float xHolderFloat;
     private Vector3 spawnPoint;
     private float timeDelay;
+    private string EndGameState;
+    private bool EndGameStarted = false;
 
     void Awake()
     {
+        GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
         timeDelay = Time.time + inBetweenTime;
         random = new System.Random(); 
     }
     void Start()
     {
+        text.text = "";
         InvokeRepeating("SpawnChili", 0, inBetweenTime);
     }
     void FixedUpdate()
     {
         //if (Time.time > timeDelay)
         
-        if (Time.time >= totalTime)
+        if (Time.time >= totalTime && !EndGameStarted)
         {
             CancelInvoke();
+            if (player.count >= minWinAmount)
+            {
+                EndGameState = "You saved the Chili!";
+                GM.Shrutebucks += 5;
+            }
+            else
+            {
+                EndGameState = "You dropped the Chili!";
+                GM.Shrutebucks += 1;
+            }
+            text.text = EndGameState;
+            EndGameStarted = true;
+        }
+        else if (Time.time >= totalTime + 3)
+        {
+            SceneManager.LoadScene(0);
         }
     }
 

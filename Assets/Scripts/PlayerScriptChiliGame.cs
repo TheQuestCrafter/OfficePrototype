@@ -16,7 +16,7 @@ public class PlayerScriptChiliGame : MonoBehaviour
     private float slowCoefficient=2;
 
     private float direction;
-    private int count = 0;
+    public int count = 0;
 
     void FixedUpdate()
     {
