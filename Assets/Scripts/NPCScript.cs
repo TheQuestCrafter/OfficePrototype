@@ -11,7 +11,7 @@ public class NPCScript : MonoBehaviour
     private string ProximitySpeech;
 
 
-    private Collider2D ProximityCheck = new Collider2D();
+    //private Collider2D ProximityCheck = new Collider2D();
 
     // Start is called before the first frame update
     void Start()
