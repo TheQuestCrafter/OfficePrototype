@@ -16,7 +16,6 @@ public class OfficePlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
 
-    private bool havemission;
 
     [SerializeField]
     Rigidbody2D rb;
@@ -38,8 +37,6 @@ public class OfficePlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
         text.text = "Schrutebucks: " + GM.Shrutebucks;
-        if(havemission)
-            speech.text = "I have taken a quest";
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -52,7 +49,6 @@ public class OfficePlayerMovement : MonoBehaviour
             {
                 collision.GetComponentInParent<QuestParent>().StartQuest();
                 collision.gameObject.SetActive(false);
-                havemission = true;
             }
         }
         else
