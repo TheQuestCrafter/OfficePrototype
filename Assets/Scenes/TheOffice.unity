@@ -204,6 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   text: {fileID: 0}
+  speech: {fileID: 321377763}
   rb: {fileID: 181871985}
 --- !u!50 &181871985
 Rigidbody2D:
