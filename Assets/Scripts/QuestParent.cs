@@ -13,14 +13,7 @@ public class QuestParent : MonoBehaviour
 
     private int questStep = 0;
     
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-
-        }
-    }
-    void StartQuest()
+    public void StartQuest()
     {
         if(questSystem.StartQuest(questName,questTextInitial) == false)
         {

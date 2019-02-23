@@ -50,6 +50,7 @@ public class OfficePlayerMovement : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1"))
             {
+                collision.GetComponentInParent<QuestParent>().StartQuest();
                 collision.gameObject.SetActive(false);
                 havemission = true;
             }

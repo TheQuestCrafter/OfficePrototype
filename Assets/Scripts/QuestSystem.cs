@@ -47,7 +47,7 @@ public class QuestSystem : MonoBehaviour
     {
         questStep = 0;
         questName = null;
-        questActive = false;
+        haveActiveQuest = false;
         questText.text = null;
     }
 }
