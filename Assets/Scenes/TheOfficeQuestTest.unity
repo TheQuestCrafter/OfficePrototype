@@ -639,7 +639,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  text: {fileID: 0}
+  text: {fileID: 1347469449}
   speech: {fileID: 1547816603}
   rb: {fileID: 369192583}
 --- !u!58 &369192582
@@ -2767,7 +2767,7 @@ GameObject:
   - component: {fileID: 1675777127}
   - component: {fileID: 1675777126}
   m_Layer: 0
-  m_Name: Text
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
