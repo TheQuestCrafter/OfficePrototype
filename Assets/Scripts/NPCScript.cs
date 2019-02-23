@@ -9,6 +9,8 @@ public class NPCScript : MonoBehaviour
     private TextMesh speech;
     [SerializeField]
     private string ProximitySpeech;
+    [SerializeField]
+    private string identifier;
 
 
     private Collider2D ProximityCheck = new Collider2D();
