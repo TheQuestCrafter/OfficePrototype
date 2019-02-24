@@ -226,6 +226,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &200582335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1080017590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9974c080ca4a7a489dce008a908f677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &215550485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,17 +248,17 @@ PrefabInstance:
     - target: {fileID: 715128493912290465, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
       propertyPath: m_Name
-      value: QuestInitializer
+      value: TestQuest
       objectReference: {fileID: 0}
     - target: {fileID: 715128493912290464, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.45
+      value: -0.09
       objectReference: {fileID: 0}
     - target: {fileID: 715128493912290464, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 715128493912290464, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
@@ -647,6 +659,7 @@ MonoBehaviour:
   moveSpeed: 10
   text: {fileID: 1347469449}
   speech: {fileID: 1547816603}
+  questSystem: {fileID: 1140406571}
   rb: {fileID: 369192583}
 --- !u!58 &369192582
 CircleCollider2D:
@@ -1097,12 +1110,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 519509383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1096c53c9106444e947e13e4964b0d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e3f5fa27939700418beca418126bb61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questSystem: {fileID: 1140406571}
   questName: TestQuest
-  questTextInitial: You Picked Up the Quest
+  questTextInitial: Go to Angela.
+  questStep: 0
+  angela: {fileID: 200582335}
+  questStep2Text: Good job! Task complete.
+  updatedAngelaText: Thanks for delivering that.
+  timeToFinish: 3
+  prompt1: Press E to interact.
 --- !u!1001 &523492563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2055,6 +2074,8 @@ MonoBehaviour:
   questName: 
   haveActiveQuest: 0
   questStep: 0
+  testQuest: {fileID: 519509384}
+  player: {fileID: 369192581}
   questText: {fileID: 1977204596}
 --- !u!224 &1146810471 stripped
 RectTransform:
