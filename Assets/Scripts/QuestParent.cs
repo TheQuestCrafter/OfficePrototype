@@ -5,15 +5,15 @@ using UnityEngine;
 public class QuestParent : MonoBehaviour
 {
     [SerializeField]
-    private QuestSystem questSystem = new QuestSystem();
+    public QuestSystem questSystem = new QuestSystem();
     [SerializeField]
-    private string questName;
+    public string questName;
     [SerializeField]
-    string questTextInitial;
+    public string questTextInitial;
 
-    private int questStep = 0;
+    public int questStep = 0;
     
-    public void StartQuest()
+    public virtual void StartQuest()
     {
         if(questSystem.StartQuest(questName,questTextInitial) == false)
         {

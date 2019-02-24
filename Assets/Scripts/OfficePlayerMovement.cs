@@ -11,6 +11,8 @@ public class OfficePlayerMovement : MonoBehaviour
     Text text;
     [SerializeField]
     private TextMesh speech;
+    [SerializeField]
+    private QuestSystem questSystem;
 
     private GlobalInformation GM = new GlobalInformation();
     private float horizontal;
@@ -41,14 +43,13 @@ public class OfficePlayerMovement : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Quest"))
+        if (collision.CompareTag("Quest") && questSystem.haveActiveQuest == false)
         {
             speech.text = "Press E to take quest";
 
             if (Input.GetButtonDown("Fire1"))
             {
-                collision.GetComponentInParent<QuestParent>().StartQuest();
-                collision.gameObject.SetActive(false);
+                questSystem.RetreiveQuest(collision.name);
             }
         }
         else
@@ -57,7 +58,17 @@ public class OfficePlayerMovement : MonoBehaviour
         }
     }
 
-
+    public void PromptPlayer(string prompt, bool activate)
+    {
+        if (activate)
+        {
+            speech.text = prompt;
+        }
+        else
+        {
+            speech.text = "";
+        }
+    }
 
 
 

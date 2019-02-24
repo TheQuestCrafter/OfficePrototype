@@ -8,18 +8,37 @@ public class QuestSystem : MonoBehaviour
     public string questName;
     public bool haveActiveQuest = false;
     public int questStep = 0;
+    string[] questList = new string[5] { "TestQuest", "", "", "", "" };
+
+    [SerializeField]
+    private TestQuest testQuest;
+    [SerializeField]
+    OfficePlayerMovement player;
     [SerializeField]
     private Text questText;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void RetreiveQuest(string givenQuestName)
     {
-        
+        if (givenQuestName == questList[0])
+        {
+            testQuest.StartQuest();
+        }
+        else if (givenQuestName == questList[1])
+        {
+
+        }
+        else if (givenQuestName == questList[2])
+        {
+
+        }
+        else if (givenQuestName == questList[3])
+        {
+
+        }
+        else if (givenQuestName == questList[4])
+        {
+
+        }
     }
 
     public bool StartQuest(string inputQuestName, string initialText)
@@ -43,11 +62,16 @@ public class QuestSystem : MonoBehaviour
         questText.text = updatedText;
     }
 
-    public void FinishQuest(string finalText)
+    public void FinishQuest()
     {
         questStep = 0;
         questName = null;
         haveActiveQuest = false;
         questText.text = null;
+    }
+
+    public void PromptPlayer(string prompt, bool active)
+    {
+        player.PromptPlayer(prompt, active);
     }
 }

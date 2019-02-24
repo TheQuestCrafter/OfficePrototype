@@ -12,6 +12,7 @@ public class NPCScript : MonoBehaviour
     [SerializeField]
     private string identifier;
 
+    public bool playerTouching = false;
 
     //private Collider2D ProximityCheck = new Collider2D();
 
@@ -27,15 +28,22 @@ public class NPCScript : MonoBehaviour
         
     }
 
+    public void UpdateProxSpeech(string updatedLine)
+    {
+        ProximitySpeech = updatedLine;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            playerTouching = true;
             speech.text = ProximitySpeech;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         speech.text = "";
+        playerTouching = false;
     }
 }
