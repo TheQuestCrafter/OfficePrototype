@@ -136,10 +136,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestQuest
       objectReference: {fileID: 0}
+    - target: {fileID: 715128493912290465, guid: 28dddf9191fa5b5408222fad745d0393,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 715128493912290464, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.09
+      value: -0.09000015
       objectReference: {fileID: 0}
     - target: {fileID: 715128493912290464, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
@@ -348,6 +353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pam
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hi there, I am Pam, welcome to the Office
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -452,11 +462,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hi there, I am Pam, welcome to the Office
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -805,6 +810,21 @@ MonoBehaviour:
   text: {fileID: 1347469449}
   speech: {fileID: 1547816603}
   questSystem: {fileID: 1140406571}
+  QuestDetectTrigger: {fileID: 369192580}
+  QuestContactFilter:
+    useTriggers: 1
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 1024
+    minDepth: 0
+    maxDepth: 10
+    minNormalAngle: 0
+    maxNormalAngle: 0
   rb: {fileID: 369192583}
 --- !u!58 &369192582
 CircleCollider2D:
@@ -885,6 +905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Michael
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hi there, I am Michael
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -990,11 +1015,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hi there, I am Michael
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -1352,6 +1372,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kevin
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Oh no! Gotta catch the chili!
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1456,11 +1481,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Oh no! Gotta catch the chili!
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -1946,15 +1966,15 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1977204595}
+  - {fileID: 2018532259}
   m_Father: {fileID: 252081279}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 534.6, y: 486.82}
-  m_SizeDelta: {x: -1069.1, y: -973.65}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 280.90002, y: -297.65002}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &978778805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2088,6 +2108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angela
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hi there, I am Angela
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2192,11 +2217,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hi there, I am Angela
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -2337,7 +2357,7 @@ MonoBehaviour:
   questStep: 0
   testQuest: {fileID: 519509384}
   player: {fileID: 369192581}
-  questText: {fileID: 1977204596}
+  questText: {fileID: 2018532257}
 --- !u!224 &1146810471 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
@@ -2646,7 +2666,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 48
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -2657,7 +2677,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Schrutebucks
 --- !u!222 &1347469450
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3340,85 +3360,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 523492563}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1977204594
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1977204595}
-  - component: {fileID: 1977204597}
-  - component: {fileID: 1977204596}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1977204595
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977204594}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 978778804}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.7, y: -7.7}
-  m_SizeDelta: {x: 829.4, y: 91}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1977204596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977204594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 36
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
-    m_Alignment: 2
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: QuestInfo
---- !u!222 &1977204597
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977204594}
-  m_CullTransparentMesh: 0
 --- !u!1 &1986759608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,6 +3424,85 @@ Transform:
   m_Father: {fileID: 600898733}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2018532256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2018532259}
+  - component: {fileID: 2018532258}
+  - component: {fileID: 2018532257}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2018532257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018532256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.5893744, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 2
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Quest Info
+--- !u!222 &2018532258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018532256}
+  m_CullTransparentMesh: 0
+--- !u!224 &2018532259
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018532256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 978778804}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 1, y: 1}
 --- !u!1 &2028582978
 GameObject:
   m_ObjectHideFlags: 0
