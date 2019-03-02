@@ -38,11 +38,30 @@ public class FireSpawning : MonoBehaviour
 
     }
 
+    IEnumerator WaitToEnableFireSpawnLocationCoroutine(GameObject fireSpawnLocation, bool reenableSpawns)
+    {
+        fireSpawnLocations.Remove(fireSpawnLocation);
+        yield return new WaitForSeconds(delayBetweenFires + 5);
+        if (reenableSpawns)//add the spawn locations back in
+        {
+            fireSpawnLocations.Add(fireSpawnLocation);
+        }
+
+    }
+
     void SpawnFire()
     {
-        index = Random.Range(1, fireSpawnLocations.Count);
+        if(fireSpawnLocations.Count == 0)//if all spawn locations have been removed, no more fires will spawn
+        {
+            canSpawnFire = false;
+            return;
+        }
+        index = Random.Range(0, fireSpawnLocations.Count);
         chosenSpawnPoint = fireSpawnLocations[index];
         Instantiate(fire, chosenSpawnPoint.transform);
         StartCoroutine(WaitToSpawnNextFireCoroutine());
+
+        //remove this fire from the spawn locations list for a while
+        StartCoroutine(WaitToEnableFireSpawnLocationCoroutine(chosenSpawnPoint, false));
     }
 }

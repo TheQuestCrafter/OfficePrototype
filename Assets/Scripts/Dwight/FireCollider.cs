@@ -13,8 +13,11 @@ public class FireCollider : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            fireBehaviorScript.ToggleInterface(true);
-            collision.gameObject.SendMessage("IdentifyFire", fire);
+            if(!fireBehaviorScript.fireIsFullSize)
+            {
+                fireBehaviorScript.ToggleInterface(true);
+                collision.gameObject.SendMessage("IdentifyFire", fire);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)//when they leave the area, remove the interface and prevent them from interacting with the fire

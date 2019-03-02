@@ -16,13 +16,14 @@ public class FireBehavior : MonoBehaviour
                           //once the fire grows to its full size of 1, the object burns down and the player fails 
                           //the object's scale is attached to the fireSize. at 0.1 it is 10% of its total size
     [SerializeField]
-    float fireSizeIncreaseRate = 0.1f;//how quickly the fire grows in size
+    float fireSizeIncreaseRate = 0.5f;//how quickly the fire grows in size
                                       //a value of 0.1f makes it take about 9 seconds to grow to full size
 
     [SerializeField]
     float fireSizeDecreaseRate = 0.1f;//how much of the fire the player stamps out with each button press
 
-    bool fireIsFullSize = false;
+    [HideInInspector]
+    public bool fireIsFullSize = false;
 
     [SerializeField]
     float rotationSpeed = 60;
@@ -62,6 +63,7 @@ public class FireBehavior : MonoBehaviour
         fireIsFullSize = true;
         fireCanvas.enabled = false;
         StartCoroutine(WaitToRemoveFireCoroutine());
+        ToggleInterface(false);
     }
 
     IEnumerator WaitToRemoveFireCoroutine()
@@ -72,6 +74,10 @@ public class FireBehavior : MonoBehaviour
 
     public void ReduceFire()
     {
+        if(fireIsFullSize)
+        {
+            return;//fire has already reached full size, player has failed
+        }
         fireSize -= fireSizeDecreaseRate;
         progressBar.fillAmount = fireSize;
         if(fireSize <= 0)
