@@ -24,6 +24,8 @@ public class OfficePlayerMovement : MonoBehaviour
     private GlobalInformation GM = new GlobalInformation();
     private int InteractableTimer;
     private string InteractableText;
+    private string QuestText;
+    private int QuestTextTimer;
     private float horizontal;
     private float vertical;
     private Collider2D[] QuestHitResults = new Collider2D[100];
@@ -55,7 +57,7 @@ public class OfficePlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
         text.text = "Schrutebucks: " + GM.Shrutebucks;
         AvaliableQuest();
-        speech.text = StuffToSayThisFrame+InteractableText;
+        speech.text = StuffToSayThisFrame+QuestText+InteractableText;
         TimerTick();
     }
     
@@ -88,7 +90,7 @@ public class OfficePlayerMovement : MonoBehaviour
                 if (Input.GetButtonDown("Fire1"))
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
-                    InteractableTimer = 1000;
+                    InteractableTimer = 100;
                     InteractableText= thing.giveprompt()+"\n";
                     
                 }
@@ -110,12 +112,18 @@ public class OfficePlayerMovement : MonoBehaviour
     private void TimerTick()
     {
         InteractableTimer--;
+        QuestTextTimer--;
 
+        InteractableTimer = Mathf.Clamp(InteractableTimer, 0, 1000);
+        QuestTextTimer = Mathf.Clamp(QuestTextTimer,0,1000);
 
-        InteractableTimer = Mathf.Clamp(InteractableTimer, 0, 90);
         if (InteractableTimer == 0)
         {
             InteractableText = "";
+        }
+        if (QuestTextTimer == 0)
+        {
+            QuestText = "";
         }
 
 
@@ -132,12 +140,16 @@ public class OfficePlayerMovement : MonoBehaviour
         return ProximityDetectionTrigger.OverlapCollider(InteractableContactFilter,InteractableHitResults) > 0;
     }
 
+
     public void PromptPlayer(string prompt, bool activate)
     {
         if (activate)
         {
-            StuffToSayThisFrame += prompt+"\n";
+            QuestTextTimer = 100;
+            QuestText = prompt;
         }
+        else
+            QuestTextTimer = 0;
 
     }
 

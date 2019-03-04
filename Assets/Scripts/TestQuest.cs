@@ -55,6 +55,7 @@ public class TestQuest : QuestParent
                 questSystem.UpdateQuest(questStep, questStep2Text);
                 timerForFinish = Time.time;
                 questStep++;
+                active = false;
             }
         }
         else
