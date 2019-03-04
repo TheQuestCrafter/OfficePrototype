@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class QuestSystem : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class QuestSystem : MonoBehaviour
     public bool haveActiveQuest = false;
     public int questStep = 0;
     string[] questList = new string[5] { "TestQuest", "", "", "", "" };
+    //Text[] textList = new Text[100];
 
     [SerializeField]
     private TestQuest testQuest;
@@ -16,6 +19,22 @@ public class QuestSystem : MonoBehaviour
     OfficePlayerMovement player;
     [SerializeField]
     private Text questText;
+    private Scene SceneHistory;
+
+    void Update()
+    {
+        if (SceneManager.GetActiveScene() != SceneHistory)
+        {
+            FindObjects();
+        }
+    }
+
+    private void FindObjects()
+    {
+        testQuest = (TestQuest)FindObjectOfType(typeof(TestQuest));
+        player = (OfficePlayerMovement)FindObjectOfType(typeof(OfficePlayerMovement));
+        questText = GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>();
+    }
 
     public void RetreiveQuest(string givenQuestName)
     {

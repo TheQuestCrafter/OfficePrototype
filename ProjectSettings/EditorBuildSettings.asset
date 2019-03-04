@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ChiliGame.unity
     guid: 0aed5ef814f0f6947b4053bd75a738e3
+  - enabled: 1
+    path: Assets/Scenes/TheOfficeQuestSystem.unity
+    guid: ef4737a873f20a84eb8b1fe4f30b235c
   m_configObjects: {}
