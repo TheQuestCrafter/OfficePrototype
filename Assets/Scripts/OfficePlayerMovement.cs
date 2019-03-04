@@ -15,14 +15,19 @@ public class OfficePlayerMovement : MonoBehaviour
     private QuestSystem questSystem;
 
     [SerializeField]
-    private Collider2D QuestDetectTrigger;
+    private Collider2D ProximityDetectionTrigger;
     [SerializeField]
     private ContactFilter2D QuestContactFilter;
+    [SerializeField]
+    private ContactFilter2D InteractableContactFilter;
 
     private GlobalInformation GM = new GlobalInformation();
+    private int InteractableTimer;
+    private string InteractableText;
     private float horizontal;
     private float vertical;
     private Collider2D[] QuestHitResults = new Collider2D[100];
+    private Collider2D[] InteractableHitResults = new Collider2D[100];
     private string StuffToSayThisFrame;
 
 
@@ -50,7 +55,8 @@ public class OfficePlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
         text.text = "Schrutebucks: " + GM.Shrutebucks;
         AvaliableQuest();
-        speech.text = StuffToSayThisFrame;
+        speech.text = StuffToSayThisFrame+InteractableText;
+        TimerTick();
     }
     
     private void AvaliableQuest()
@@ -72,34 +78,58 @@ public class OfficePlayerMovement : MonoBehaviour
 
             }
         }
-        else
+        else if (InteractableDetected()&&InteractableTimer==0)
         {
-            speech.text = "";
-        }
-    }
 
-    /*
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Quest") && questSystem.haveActiveQuest == false)
-        {
-            speech.text = "Press E to take quest";
 
-            if (Input.GetButtonDown("Fire1"))
+            foreach (Collider2D i in InteractableHitResults)
             {
-                questSystem.RetreiveQuest(collision.name);
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    Interactiables thing = i.GetComponentInParent<Interactiables>();
+                    InteractableTimer = 1000;
+                    InteractableText= thing.giveprompt()+"\n";
+                    
+                }
+                else
+                {
+                    StuffToSayThisFrame += "Press E to interact with " + i.name + "\n";
+                    break;
+                }
             }
-        }
+                    
+            
+        }  
         else
         {
             speech.text = "";
         }
     }
-    */
+
+    private void TimerTick()
+    {
+        InteractableTimer--;
+
+
+        InteractableTimer = Mathf.Clamp(InteractableTimer, 0, 90);
+        if (InteractableTimer == 0)
+        {
+            InteractableText = "";
+        }
+
+
+
+    }
+
+
     private bool QuestDetected()
     {
-        return QuestDetectTrigger.OverlapCollider(QuestContactFilter, QuestHitResults) > 0;
+        return ProximityDetectionTrigger.OverlapCollider(QuestContactFilter, QuestHitResults) > 0;
+    }
+    private bool InteractableDetected()
+    {
+        return ProximityDetectionTrigger.OverlapCollider(InteractableContactFilter,InteractableHitResults) > 0;
     }
 
     public void PromptPlayer(string prompt, bool activate)
