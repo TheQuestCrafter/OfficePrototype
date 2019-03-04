@@ -1383,7 +1383,7 @@ MonoBehaviour:
   questStep2Text: Good job! Task complete.
   updatedAngelaText: Thanks for delivering that.
   timeToFinish: 3
-  prompt1: ress E to interact..
+  prompt1: Press E to interact..
 --- !u!1 &522818280
 GameObject:
   m_ObjectHideFlags: 0
