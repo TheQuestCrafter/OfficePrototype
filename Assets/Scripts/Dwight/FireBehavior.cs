@@ -11,6 +11,10 @@ public class FireBehavior : MonoBehaviour
     public Image progressBar;
     public Canvas fireCanvas;
 
+    AudioSource audioSource;
+    public AudioClip fire_sizzle_out;
+    public AudioClip[] fire_extinguish;
+
     [SerializeField]
     float fireSize = 0.1f;//as the fire grows in size, add visual effects to make it more noticeable
                           //once the fire grows to its full size of 1, the object burns down and the player fails 
@@ -31,6 +35,7 @@ public class FireBehavior : MonoBehaviour
     private void Start()
     {
         ToggleInterface(false);
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -60,6 +65,7 @@ public class FireBehavior : MonoBehaviour
     void EndFire()
     {
         fireSprite.GetComponent<Renderer>().material.color = Color.black;
+        audioSource.PlayOneShot(fire_sizzle_out);
         fireIsFullSize = true;
         fireCanvas.enabled = false;
         StartCoroutine(WaitToRemoveFireCoroutine());
@@ -80,6 +86,7 @@ public class FireBehavior : MonoBehaviour
         }
         fireSize -= fireSizeDecreaseRate;
         progressBar.fillAmount = fireSize;
+        audioSource.PlayOneShot(fire_extinguish[Random.Range(0, fire_extinguish.Length)]);//plays a random noise from the array of fire extinguish noises
         if(fireSize <= 0)
         {
             //do something to reward the player, then destroy the fire
