@@ -39,6 +39,12 @@ public class NPCScript : MonoBehaviour
         {
             playerTouching = true;
             speech.text = ProximitySpeech;
+            //temporary measure to start minigame
+            if (gameObject.name == "Dwight")
+            {
+                GameObject fireSpawner = GameObject.Find("FireSpawnLocations");
+                fireSpawner.GetComponent<FireSpawning>().StartFireMinigame(8);
+            }
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

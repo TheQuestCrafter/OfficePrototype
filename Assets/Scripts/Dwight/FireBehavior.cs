@@ -8,6 +8,7 @@ public class FireBehavior : MonoBehaviour
 
     public GameObject fireSprite;
     public GameObject fireSpawner;
+    FireSpawning fireSpawningScript;
     public Image progressBar;
     public Canvas fireCanvas;
 
@@ -34,8 +35,10 @@ public class FireBehavior : MonoBehaviour
 
     private void Start()
     {
+        fireSpawner = GameObject.Find("FireSpawnLocations");
         ToggleInterface(false);
         audioSource = GetComponent<AudioSource>();
+        fireSpawningScript = fireSpawner.GetComponent<FireSpawning>();
     }
 
     void Update()
@@ -59,12 +62,14 @@ public class FireBehavior : MonoBehaviour
         fireSize += fireSizeIncreaseRate * Time.deltaTime;
         fireSprite.transform.localScale = new Vector3(fireSize, fireSize, fireSize);
 
+        //update the bar showing the player how close to burning down the object is
         progressBar.fillAmount = fireSize;
     }
 
     void EndFire()
     {
         fireSprite.GetComponent<Renderer>().material.color = Color.black;
+        fireSpawningScript.UpdateFireTally(false);
         audioSource.PlayOneShot(fire_sizzle_out);
         fireIsFullSize = true;
         fireCanvas.enabled = false;
@@ -89,7 +94,8 @@ public class FireBehavior : MonoBehaviour
         audioSource.PlayOneShot(fire_extinguish[Random.Range(0, fire_extinguish.Length)]);//plays a random noise from the array of fire extinguish noises
         if(fireSize <= 0)
         {
-            //do something to reward the player, then destroy the fire
+            //the player has put out the fire
+            fireSpawningScript.UpdateFireTally(true);
             Destroy(gameObject);
         }
     }
