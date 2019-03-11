@@ -72,9 +72,8 @@ public class OfficePlayerMovement : MonoBehaviour
                 {
                     if (i.CompareTag("Quest"))
                     {
-                        i.gameObject.SetActive(false);
                         questSystem.RetreiveQuest(i.name);
-
+                        i.gameObject.SetActive(false);
                     }
                 }
 

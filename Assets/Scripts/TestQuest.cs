@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Fungus;
 
 
 public class TestQuest : QuestParent 
@@ -16,6 +17,14 @@ public class TestQuest : QuestParent
     private float timeToFinish;
     [SerializeField]
     private string prompt1;
+
+    //Fungus Variables
+    [SerializeField]
+    private Flowchart questFlowchart; //reference to this quest's Flowchart
+    [SerializeField]
+    private string Step1BlockName;
+    [SerializeField]
+    private string Step2BlockName;
 
     private float timerForFinish;
     private bool active;
@@ -37,6 +46,9 @@ public class TestQuest : QuestParent
         if (questSystem.StartQuest(questName, questTextInitial) == false)
         {
             questStep = 1;
+
+            //CALL FLOWCHART BLOCK ONE
+            questFlowchart.ExecuteBlock(Step1BlockName);
         }
         else
         {
@@ -46,11 +58,16 @@ public class TestQuest : QuestParent
 
     private void QuestStep1()
     {
+        
+
         if (angela.playerTouching == true)
         {
             active = true;
             if (angela.playerTouching == true && Input.GetButtonDown("Fire1"))
             {
+                //CALL FLOWCHART BLOCK TWO
+                questFlowchart.ExecuteBlock(Step2BlockName);
+
                 angela.UpdateProxSpeech(updatedAngelaText);
                 questSystem.UpdateQuest(questStep, questStep2Text);
                 timerForFinish = Time.time;
@@ -67,6 +84,7 @@ public class TestQuest : QuestParent
 
     private void PromptPlayer()
     {
+
         questSystem.PromptPlayer(prompt1, active);
     }
 

@@ -65,7 +65,7 @@ public class Spawner : MonoBehaviour
         }
         else if (Time.time >= totalTime + 3)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(0);
         }
     }
 
