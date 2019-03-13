@@ -66,6 +66,9 @@ public class OfficePlayerMovement : MonoBehaviour
         if (QuestDetected() && questSystem.haveActiveQuest == false)
         {
             StuffToSayThisFrame += "Press E to take quest\n";
+
+             
+
             if (Input.GetButtonDown("Fire1"))
             {
                 foreach (Collider2D i in QuestHitResults)
