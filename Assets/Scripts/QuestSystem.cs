@@ -36,8 +36,10 @@ public class QuestSystem : MonoBehaviour
     {
         testQuest = (TestQuest)FindObjectOfType(typeof(TestQuest));
         player = (OfficePlayerMovement)FindObjectOfType(typeof(OfficePlayerMovement));
+        /*
         if(GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>()!=null)
             questText = GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>();
+            */
     }
 
 

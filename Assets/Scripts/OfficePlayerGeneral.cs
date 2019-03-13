@@ -30,7 +30,7 @@ public class OfficePlayerGeneral : MonoBehaviour
     [Tooltip("What the player considers Fire")]
     private ContactFilter2D FireContactFilter;
 
-
+    private bool FreezePlayer;
     Rigidbody2D MyRigidBody2D;
     private GlobalInformation GM = new GlobalInformation();
     private int InteractableTimer;
@@ -47,6 +47,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     void Awake()
     {
+        FreezePlayer = false;
         speech.text = "";
         StuffToSayThisFrame = "";
         GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
@@ -64,7 +65,10 @@ public class OfficePlayerGeneral : MonoBehaviour
     private void FixedUpdate()
     {
         StuffToSayThisFrame = "";
-        MyRigidBody2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+
+       if(!FreezePlayer)
+       MyRigidBody2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+
         text.text = "Schrutebucks: " + GM.Shrutebucks;
         SenseAround();
         speech.text = StuffToSayThisFrame + QuestText + InteractableText;
@@ -79,6 +83,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
             if (Input.GetButtonDown("Fire1"))
             {
+                FreezePlayer = true;
                 foreach (Collider2D i in QuestHitResults)
                 {
                     if (i.CompareTag("Quest"))
@@ -103,6 +108,8 @@ public class OfficePlayerGeneral : MonoBehaviour
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
                     InteractableTimer = 100;
+                    FreezePlayer = true;
+                    thing.giveprompt();
                 }
                 else
                 {
@@ -186,6 +193,10 @@ public class OfficePlayerGeneral : MonoBehaviour
     private bool FireDetected()
     {
         return ProximityDetectionTrigger.OverlapCollider(FireContactFilter, FireHitResults) > 0;
+    }
+    public void UnfreezePlayer()
+    {
+        FreezePlayer = false;
     }
 
 
