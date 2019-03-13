@@ -15,13 +15,10 @@ public class QuestParent : MonoBehaviour
     
     public virtual void StartQuest()
     {
+        //Sets to the next quest step
         if(questSystem.StartQuest(questName,questTextInitial) == false)
         {
             questStep = 1;
-        }
-        else
-        {
-
         }
     }
 }

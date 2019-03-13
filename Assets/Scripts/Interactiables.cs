@@ -12,21 +12,9 @@ public class Interactiables : MonoBehaviour
     [SerializeField]
     private string objectBlockName;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
     public void giveprompt()
     {
+        //Calls the block from the object flowchart with the string title given through objectBlockName
         ObjectDescriptionChart.ExecuteBlock(objectBlockName);
     }
 }

@@ -13,6 +13,7 @@ public class OfficeToMinigame : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            //sends player to selected scene upon collision
             SceneManager.LoadScene(sceneNum);
         }
     }

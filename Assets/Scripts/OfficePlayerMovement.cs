@@ -101,9 +101,7 @@ public class OfficePlayerMovement : MonoBehaviour
                     StuffToSayThisFrame += "Press E to interact with " + i.name + "\n";
                     break;
                 }
-            }
-                    
-            
+            } 
         }  
         else
         {

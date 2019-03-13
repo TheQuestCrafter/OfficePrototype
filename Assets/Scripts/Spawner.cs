@@ -34,19 +34,24 @@ public class Spawner : MonoBehaviour
 
     void Awake()
     {
+        //Takes in the GlobalInformation which is part of the game master.
         GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
+
         timeDelay = Time.time + inBetweenTime;
         random = new System.Random(); 
     }
     void Start()
     {
         text.text = "";
+
+        //Starts the Chili Spawning sequence
         InvokeRepeating("SpawnChili", 0, inBetweenTime);
     }
     void FixedUpdate()
     {
-        //if (Time.time > timeDelay)
-        
+        ///<summary>
+        /// If the timer has finished the desired time given in the serialized field then it will stop spawning chili and determine whether the player won or lost.
+        /// </summary>
         if (Time.time >= totalTime && !EndGameStarted)
         {
             CancelInvoke();
@@ -65,10 +70,13 @@ public class Spawner : MonoBehaviour
         }
         else if (Time.time >= totalTime + 3)
         {
+            //Loads back to the office.
             SceneManager.LoadScene(0);
         }
     }
-
+    /// <summary>
+    /// Sets the spawn location then spawns chili there.
+    /// </summary>
     void SpawnChili()
     {
         SetSpawnX();
@@ -77,11 +85,13 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
+        //Instantiates the chili at the location set by SetSpawn
         var chili = Instantiate(chiliPrefab, spawnPoint,spawnerPoint.rotation,this.transform);
     }
 
     private void SetSpawnX()
     {
+        //Randomly generates a x location to spawn the chili at since the X is constantly set.
         xHolderFloat = random.Next(-spawnX, spawnX);
         spawnPoint = spawnerPoint.position;
         spawnPoint.Set(spawnerPoint.position.x+xHolderFloat,spawnerPoint.position.y,spawnerPoint.position.z);

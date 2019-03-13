@@ -11,7 +11,6 @@ public class QuestSystem : MonoBehaviour
     public bool haveActiveQuest = false;
     public int questStep = 0;
     string[] questList = new string[5] { "TestQuest", "", "", "", "" };
-    //Text[] textList = new Text[100];
 
     [SerializeField]
     private TestQuest testQuest;
@@ -23,12 +22,16 @@ public class QuestSystem : MonoBehaviour
 
     void Update()
     {
+        //finds any missing references once a new scene has started
         if (SceneManager.GetActiveScene() != SceneHistory)
         {
             FindObjects();
         }
     }
 
+    /// <summary>
+    /// Looks for replacement components for the questsystem
+    /// </summary>
     private void FindObjects()
     {
         testQuest = (TestQuest)FindObjectOfType(typeof(TestQuest));
@@ -37,6 +40,11 @@ public class QuestSystem : MonoBehaviour
             questText = GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>();
     }
 
+
+    /// <summary>
+    /// Searches through questname given and calls the quest that was procted
+    /// </summary>
+    /// <param name="givenQuestName"></param>
     public void RetreiveQuest(string givenQuestName)
     {
         if (givenQuestName == questList[0])
@@ -61,6 +69,7 @@ public class QuestSystem : MonoBehaviour
         }
     }
 
+    //Calls the given quest and initiates it if there is no active quest
     public bool StartQuest(string inputQuestName, string initialText)
     {
         if (haveActiveQuest == false)
@@ -76,12 +85,14 @@ public class QuestSystem : MonoBehaviour
         }
     }
 
+    //Updates the quest text UI
     public void UpdateQuest(int inputQuestStep, string updatedText)
     {
         questStep = inputQuestStep;
         questText.text = updatedText;
     }
 
+    //Resets the questsystem
     public void FinishQuest()
     {
         questStep = 0;
@@ -90,6 +101,7 @@ public class QuestSystem : MonoBehaviour
         questText.text = null;
     }
 
+    //prompts the OfficePlayerMovement
     public void PromptPlayer(string prompt, bool active)
     {
         player.PromptPlayer(prompt, active);

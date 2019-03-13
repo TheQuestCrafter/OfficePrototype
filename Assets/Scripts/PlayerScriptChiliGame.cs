@@ -26,6 +26,7 @@ public class PlayerScriptChiliGame : MonoBehaviour
 
     private void Move()
     {
+        //Moves player on input
         direction = Input.GetAxis("Horizontal");
         Vector2 vector = new Vector2(moveSpeed, 0);
         if (!Input.GetKeyDown(KeyCode.A) || !Input.GetKey(KeyCode.D))
@@ -37,6 +38,7 @@ public class PlayerScriptChiliGame : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        //increases score if chili is caught
         if (other.tag == "Chili")
         {
             count++;
