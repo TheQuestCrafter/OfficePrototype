@@ -610,7 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 372130749}
+  selectedFlowchart: {fileID: 425092054}
 --- !u!4 &349383802
 Transform:
   m_ObjectHideFlags: 1
@@ -862,7 +862,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 3679182615745102092}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926774419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33aaca05f5a1fa94b9c0d255048bfa6c, type: 3}
   m_Name: 
@@ -879,6 +879,7 @@ GameObject:
   - component: {fileID: 372130749}
   - component: {fileID: 372130748}
   - component: {fileID: 372130751}
+  - component: {fileID: 372130752}
   m_Layer: 0
   m_Name: ObjectDescriptionChart
   m_TagString: Untagged
@@ -912,6 +913,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 372130751}
+  - {fileID: 372130752}
 --- !u!114 &372130749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,7 +941,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 372130748}
   selectedCommands:
-  - {fileID: 372130751}
+  - {fileID: 372130752}
   variables: []
   description: 
   stepPause: 0
@@ -992,6 +994,23 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &372130752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372130747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 2
+  indentLevel: 0
+  targetObject: {fileID: 926774419}
+  methodName: UnfreezePlayer
+  delay: 0
 --- !u!1001 &413434473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1138,6 +1157,8 @@ GameObject:
   - component: {fileID: 425092061}
   - component: {fileID: 425092060}
   - component: {fileID: 425092062}
+  - component: {fileID: 425092064}
+  - component: {fileID: 425092063}
   m_Layer: 0
   m_Name: TestQuestFlowchart
   m_TagString: Untagged
@@ -1169,7 +1190,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 425092059}
   selectedCommands: []
   variables: []
   description: 
@@ -1238,6 +1260,7 @@ MonoBehaviour:
   commandList:
   - {fileID: 425092055}
   - {fileID: 425092062}
+  - {fileID: 425092063}
 --- !u!4 &425092057
 Transform:
   m_ObjectHideFlags: 0
@@ -1293,8 +1316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 70
-    y: 111
+    x: 60
+    y: 159
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1307,6 +1330,7 @@ MonoBehaviour:
   - {fileID: 425092058}
   - {fileID: 425092061}
   - {fileID: 425092060}
+  - {fileID: 425092064}
 --- !u!114 &425092060
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1388,6 +1412,40 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &425092063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
+  targetObject: {fileID: 926774419}
+  methodName: UnfreezePlayer
+  delay: 0
+--- !u!114 &425092064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 8
+  indentLevel: 0
+  targetObject: {fileID: 926774419}
+  methodName: UnfreezePlayer
+  delay: 0
 --- !u!1 &425780631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,37 +2302,6 @@ Transform:
   m_Father: {fileID: 913911063}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &874362083
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 874362084}
-  m_Layer: 0
-  m_Name: Interactables
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &874362084
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 874362083}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.380576, y: 2.3540428, z: -1.6191406}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 913911063}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &875684654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2363,8 +2390,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913911062}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.380576, y: 2.3540428, z: -1.6191406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 170357566}
@@ -2375,8 +2402,8 @@ Transform:
   - {fileID: 1285251678}
   - {fileID: 811302692}
   - {fileID: 1960422627}
-  m_Father: {fileID: 874362084}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &913911064
 MonoBehaviour:
@@ -2414,7 +2441,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926774419}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88ee76954db032b429133c819ab2cdef, type: 3}
   m_Name: 
@@ -4791,7 +4818,12 @@ PrefabInstance:
     - target: {fileID: 3679182616047054729, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679182616047054728, guid: 53234af2b41945249a6750d198b09cfb,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.33
       objectReference: {fileID: 0}
     - target: {fileID: 3679182616047054725, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
@@ -4901,7 +4933,7 @@ PrefabInstance:
     - target: {fileID: 3679182616047054726, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
