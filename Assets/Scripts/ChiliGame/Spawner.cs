@@ -36,17 +36,14 @@ public class Spawner : MonoBehaviour
     {
         //Takes in the GlobalInformation which is part of the game master.
         GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
-
+        totalTime = totalTime + Time.time;
         timeDelay = Time.time + inBetweenTime;
-        random = new System.Random(); 
-    }
-    void Start()
-    {
-        text.text = "";
-
+        random = new System.Random();
         //Starts the Chili Spawning sequence
         InvokeRepeating("SpawnChili", 0, inBetweenTime);
+        text.text = "";
     }
+
     void FixedUpdate()
     {
         ///<summary>
@@ -70,6 +67,7 @@ public class Spawner : MonoBehaviour
         }
         else if (Time.time >= totalTime + 3)
         {
+            EndGameStarted = false;
             //Loads back to the office.
             SceneManager.LoadScene(0);
         }
