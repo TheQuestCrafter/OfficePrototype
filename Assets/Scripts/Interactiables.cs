@@ -5,8 +5,6 @@ using Fungus;
 
 public class Interactiables : MonoBehaviour
 {
-    [SerializeField]
-    private string ExamineText;
 
     //Fungus Variables
     [SerializeField]
@@ -27,9 +25,8 @@ public class Interactiables : MonoBehaviour
     }
 
 
-    public string giveprompt()
+    public void giveprompt()
     {
         ObjectDescriptionChart.ExecuteBlock(objectBlockName);
-        return ExamineText;
     }
 }

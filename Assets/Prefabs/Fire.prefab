@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 431056125}
   - component: {fileID: 431056127}
   - component: {fileID: 431056126}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FireProgressBG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 431939233}
   - component: {fileID: 431939232}
   - component: {fileID: 431939231}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FireCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 657642092}
   - component: {fileID: 657642091}
   - component: {fileID: 657642090}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: PromptText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 1588604787}
   - component: {fileID: 1588604788}
   - component: {fileID: 4727104058297749748}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FireCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 2057356177}
   - component: {fileID: 2057356179}
   - component: {fileID: 2057356178}
-  m_Layer: 5
+  m_Layer: 12
   m_Name: FireProgress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   - component: {fileID: 942680736561629690}
   - component: {fileID: 942680736561629669}
   - component: {fileID: 942680736561629692}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: FireSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 942680736751404647}
   - component: {fileID: 942680736751404646}
   - component: {fileID: 4330273173015167240}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Fire
   m_TagString: Fire
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 3179735339773633506}
   - component: {fileID: 3066697815354043262}
   - component: {fileID: 1490259935244336967}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}

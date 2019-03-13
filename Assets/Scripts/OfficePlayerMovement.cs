@@ -93,7 +93,7 @@ public class OfficePlayerMovement : MonoBehaviour
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
                     InteractableTimer = 100;
-                    InteractableText= thing.giveprompt()+"\n";
+                    thing.giveprompt();
                     
                 }
                 else

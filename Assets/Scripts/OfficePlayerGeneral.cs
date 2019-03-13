@@ -5,21 +5,28 @@ using UnityEngine.UI;
 
 public class OfficePlayerGeneral : MonoBehaviour
 {
+    [SerializeField]
     [Tooltip("The Player's movement speed, 10 used for testing")]
     private float moveSpeed = 10f;
     [SerializeField]
     Text text;
+    [SerializeField]
     [Tooltip("A referene to the player's speech bubble textmesh")]
     private TextMesh speech;
+    [SerializeField]
     [Tooltip("A referene to the Quest system")]
     private QuestSystem questSystem;
 
+    [SerializeField]
     [Tooltip("Collider 2D that detects everything around player and runs them through filters below")]
     private Collider2D ProximityDetectionTrigger;
+    [SerializeField]
     [Tooltip("What the player considers Quest objects")]
     private ContactFilter2D QuestContactFilter;
+    [SerializeField]
     [Tooltip("What the player considers Interactable objects")]
     private ContactFilter2D InteractableContactFilter;
+    [SerializeField]
     [Tooltip("What the player considers Fire")]
     private ContactFilter2D FireContactFilter;
 
@@ -36,7 +43,7 @@ public class OfficePlayerGeneral : MonoBehaviour
     private Collider2D[] InteractableHitResults = new Collider2D[100];
     private Collider2D[] FireHitResults = new Collider2D[100];
     private string StuffToSayThisFrame;
-    GameObject fire;
+   // GameObject fire;
 
     void Awake()
     {
@@ -83,7 +90,12 @@ public class OfficePlayerGeneral : MonoBehaviour
 
             }
         }
-        else if (InteractableDetected() && InteractableTimer == 0)
+        else
+        {
+            speech.text = "";
+        }
+
+        if (InteractableDetected() && InteractableTimer == 0)
         {
             foreach (Collider2D i in InteractableHitResults)
             {
@@ -91,7 +103,6 @@ public class OfficePlayerGeneral : MonoBehaviour
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
                     InteractableTimer = 100;
-                    InteractableText = thing.giveprompt() + "\n";
                 }
                 else
                 {
@@ -100,26 +111,46 @@ public class OfficePlayerGeneral : MonoBehaviour
                 }
             }
         }
-        else if (FireDetected())
+        if (FireDetected())
         {
-            foreach (Collider2D i in InteractableHitResults)
+            StuffToSayThisFrame += "Press E put out fire \n";
+
+            if (Input.GetButtonDown("Fire1"))
             {
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    StampOutFire();
-                }
-                else
-                {
-                    StuffToSayThisFrame += "Press E put out fire \n";
-                    break;
-                }
+                FireHitResults[0].GetComponentInParent<FireBehavior>().ReduceFire();
+                    Debug.Log("Player tried to put out fire");
             }
 
+
+
+
+
+
+            /*
+            foreach (Collider2D i in FireHitResults)
+            {
+                
+               
+                    
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    //GameObject fire = i.gameObject;
+                    //fire = i.gameObject;
+                    if (i.gameObject && i.gameObject.CompareTag("Fire"))
+                    {
+                        i.gameObject.GetComponent<FireBehavior>().ReduceFire();
+                        Debug.Log("player tried to put out fire");
+                    }
+                        
+                    //StampOutFire();
+                }
+                
+                
+            }
+            */
+
         }
-        else
-        {
-            speech.text = "";
-        }
+
     }
 
     private void TimerTick()
@@ -169,6 +200,7 @@ public class OfficePlayerGeneral : MonoBehaviour
             QuestTextTimer = 0;
     }
 
+    /*
     void StampOutFire()
     {
         if (fire)//sanity check
@@ -184,4 +216,5 @@ public class OfficePlayerGeneral : MonoBehaviour
     {
         fire = receivedFire;
     }
+    */
 }
