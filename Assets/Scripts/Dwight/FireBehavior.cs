@@ -56,11 +56,11 @@ public class FireBehavior : MonoBehaviour
     void GrowFire()
     {
         //rotate the fire as a primitive way of making it stand out to the player
-        fireSprite.transform.Rotate(0, 0, 1 * rotationSpeed * Time.deltaTime);
+        //fireSprite.transform.Rotate(0, 0, 1 * rotationSpeed * Time.deltaTime);
 
         //calculate the new size of the fire over time
         fireSize += fireSizeIncreaseRate * Time.deltaTime;
-        fireSprite.transform.localScale = new Vector3(fireSize, fireSize, fireSize);
+        fireSprite.transform.localScale = new Vector3(fireSize*4, fireSize * 4, fireSize * 4);
 
         //update the bar showing the player how close to burning down the object is
         progressBar.fillAmount = fireSize;
