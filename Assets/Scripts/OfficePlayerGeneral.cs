@@ -68,7 +68,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     private void FixedUpdate()
     {
-        StuffToSayThisFrame = "";
+        StuffToSayThisFrame = ""; // resets stuff to say this frame every update, if there is something to say, it is filled in again later this update.
 
        if(!FreezePlayer)
        MyRigidBody2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
@@ -153,40 +153,14 @@ public class OfficePlayerGeneral : MonoBehaviour
                 FireHitResults[0].GetComponentInParent<FireBehavior>().ReduceFire();
             }
 
-
-
-
-
-
-            /*
-            foreach (Collider2D i in FireHitResults)
-            {
-                
-               
-                    
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    //GameObject fire = i.gameObject;
-                    //fire = i.gameObject;
-                    if (i.gameObject && i.gameObject.CompareTag("Fire"))
-                    {
-                        i.gameObject.GetComponent<FireBehavior>().ReduceFire();
-                        Debug.Log("player tried to put out fire");
-                    }
-                        
-                    //StampOutFire();
-                }
-                
-                
-            }
-            */
-
         }
 
     }
 
     private void TimerTick()
     {
+        //this function is called once per update to count down how long each prompt text stays visible.
+        //currently has two types of text that needs to have timer.
         InteractableTimer--;
         QuestTextTimer--;
 
@@ -201,12 +175,9 @@ public class OfficePlayerGeneral : MonoBehaviour
         {
             QuestText = "";
         }
-
-
-
     }
 
-
+    //various detects returning a bool depending on if certain type is detected in the detection collider.
     private bool QuestDetected()
     {
         return ProximityDetectionTrigger.OverlapCollider(QuestContactFilter, QuestHitResults) > 0;
@@ -223,6 +194,8 @@ public class OfficePlayerGeneral : MonoBehaviour
     {
         return ProximityDetectionTrigger.OverlapCollider(FireContactFilter, FireHitResults) > 0;
     }
+
+    //freeze and unfreeze player uded for dialogue and fungus plugin to keep player grounded when fungus is running.
     public void UnfreezePlayer()
     {
         FreezePlayer = false;
@@ -232,7 +205,7 @@ public class OfficePlayerGeneral : MonoBehaviour
         FreezePlayer = true;
     }
 
-
+    //method used by other scripts and gameobjects to give the player a speech bubble prompt.
     public void PromptPlayer(string prompt, bool activate)
     {
         if (activate)

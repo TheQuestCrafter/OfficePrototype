@@ -888,18 +888,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.57441163, y: 0.5571579}
   m_EdgeRadius: 0
---- !u!114 &369192581 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3679182616047054729, guid: 53234af2b41945249a6750d198b09cfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3679182615745102092}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926774419}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 33aaca05f5a1fa94b9c0d255048bfa6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &372130747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2810,85 +2798,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3679182615745102092}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &926774421 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 3679182616047054728, guid: 53234af2b41945249a6750d198b09cfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3679182615745102092}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &926774426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926774419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88ee76954db032b429133c819ab2cdef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 10
-  text: {fileID: 1347469449}
-  speech: {fileID: 1408151085}
-  questSystem: {fileID: 1140406571}
-  ProximityDetectionTrigger: {fileID: 926774421}
-  QuestContactFilter:
-    useTriggers: 1
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 1024
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  InteractableContactFilter:
-    useTriggers: 1
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 2048
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  FireContactFilter:
-    useTriggers: 1
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 4096
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  MinigameContactFilter:
-    useTriggers: 1
-    useLayerMask: 1
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 8192
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!1001 &946547900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3478,7 +3387,7 @@ MonoBehaviour:
   haveActiveQuest: 0
   questStep: 0
   testQuest: {fileID: 519509384}
-  player: {fileID: 369192581}
+  player: {fileID: 0}
   questText: {fileID: 2018532257}
 --- !u!224 &1146810471 stripped
 RectTransform:
@@ -4333,12 +4242,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.25771523}
   serializedVersion: 2
   m_Radius: 1.0257397
---- !u!102 &1408151085 stripped
-TextMesh:
-  m_CorrespondingSourceObject: {fileID: 3679182617015898007, guid: 53234af2b41945249a6750d198b09cfb,
-    type: 3}
-  m_PrefabInstance: {fileID: 3679182615745102092}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1491333288
 GameObject:
   m_ObjectHideFlags: 0
@@ -5478,26 +5381,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3679182616047054729, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 1347469449}
-    - target: {fileID: 3679182616047054729, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: questSystem
-      value: 
-      objectReference: {fileID: 1140406571}
-    - target: {fileID: 3679182616047054729, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3679182616047054728, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 3679182616047054725, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5603,10 +5486,13 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3679182616047054726, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1347469449}
+    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
+      propertyPath: questSystem
+      value: 
+      objectReference: {fileID: 1140406571}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
