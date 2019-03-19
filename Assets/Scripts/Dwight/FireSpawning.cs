@@ -7,6 +7,9 @@ public class FireSpawning : MonoBehaviour
     [HideInInspector]
     public List<GameObject> fireSpawnLocations = new List<GameObject>();
 
+    [Tooltip("The NPC or object that is responsible for starting the minigame")]
+    public GameObject startingObject;
+
     public PopupText popupText;
 
     GameObject chosenSpawnPoint;
@@ -21,6 +24,7 @@ public class FireSpawning : MonoBehaviour
     int firesExtinguished = 0;
     int firesFailed = 0;
     bool minigameIsRunning = false;
+    bool minigameIsFinished = false;
 
     [HideInInspector]
     public int totalFires = 8;//the total amount of fires to spawn for the minigame
@@ -34,8 +38,28 @@ public class FireSpawning : MonoBehaviour
         }
     }
 
+    public bool CanStartMinigame()
+    {
+        if (minigameIsFinished)
+        {
+            return false;//don't let them start the minigame if they've already completed it
+        }
+        if (minigameIsRunning)
+        {
+            return false;//don't let them start the fire minigame while it's already running
+        }
+        else
+        {
+            return true;
+        }
+    }
+
     public void StartFireMinigame(int numFires=8)//starts the minigame. recommended number of fires to spawn is 8
     {
+        if(minigameIsFinished)
+        {
+            return;//don't let them start the minigame if they've already completed it
+        }
         if(minigameIsRunning)
         {
             return;//don't let them start the fire minigame while it's already running
@@ -66,11 +90,13 @@ public class FireSpawning : MonoBehaviour
     public void EndFireMinigame()//ends the game and shows how many fires you extinguished
     {
         popupText.DisplayPopupText("Fires extinguished: " + firesExtinguished + "/" + totalFires);
+        startingObject.GetComponent<NPCScript>().ResetMinigame(firesExtinguished);
 
         //clear the game in case it's played again
         firesExtinguished = 0;
         firesFailed = 0;
         minigameIsRunning = false;
+        minigameIsFinished = true;
     }
 
     private void Update()
