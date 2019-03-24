@@ -15,7 +15,7 @@ public class QuestSystem : MonoBehaviour
     [SerializeField]
     private TestQuest testQuest;
     [SerializeField]
-    OfficePlayerMovement player;
+    OfficePlayerGeneral player;
     [SerializeField]
     private Text questText;
     private Scene SceneHistory;
@@ -35,7 +35,7 @@ public class QuestSystem : MonoBehaviour
     private void FindObjects()
     {
         testQuest = (TestQuest)FindObjectOfType(typeof(TestQuest));
-        player = (OfficePlayerMovement)FindObjectOfType(typeof(OfficePlayerMovement));
+        player = (OfficePlayerGeneral)FindObjectOfType(typeof(OfficePlayerGeneral));
         /*
         if(GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>()!=null)
             questText = GameObject.Find("Canvas/QuestPanel/QuestText").GetComponent<Text>();
@@ -106,6 +106,11 @@ public class QuestSystem : MonoBehaviour
     //prompts the OfficePlayerMovement
     public void PromptPlayer(string prompt, bool active)
     {
+        if(!player)
+        {
+            Debug.Log("Null player in PromptPlayer.");
+            return;
+        }
         player.PromptPlayer(prompt, active);
     }
 }

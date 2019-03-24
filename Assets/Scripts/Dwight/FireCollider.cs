@@ -16,7 +16,7 @@ public class FireCollider : MonoBehaviour
             if(!fireBehaviorScript.fireIsFullSize)
             {
                 fireBehaviorScript.ToggleInterface(true);
-                collision.gameObject.SendMessage("IdentifyFire", fire);
+                //collision.gameObject.SendMessage("IdentifyFire", fire);
             }
         }
     }
@@ -25,7 +25,7 @@ public class FireCollider : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             fireBehaviorScript.ToggleInterface(false);
-            collision.gameObject.SendMessage("IdentifyFire", gameObject);//can't send null as a parameter, so sending this object as a dud instead
+            //collision.gameObject.SendMessage("IdentifyFire", gameObject);//can't send null as a parameter, so sending this object as a dud instead
         }
     }
 }
