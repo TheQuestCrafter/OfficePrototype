@@ -36,16 +36,13 @@ public class OfficePlayerGeneral : MonoBehaviour
     private bool FreezePlayer;
     Rigidbody2D MyRigidBody2D;
     private GlobalInformation GM = new GlobalInformation();
-    private int InteractableTimer;
-    private string InteractableText;
-    private string QuestText;
-    private int QuestTextTimer;
     private float horizontal;
     private float vertical;
     private Collider2D[] QuestHitResults = new Collider2D[100];
     private Collider2D[] InteractableHitResults = new Collider2D[100];
     private Collider2D[] FireHitResults = new Collider2D[100];
     private Collider2D[] MinigameHitResults = new Collider2D[100];
+    private List<PlayerPrompts> promptToSay = new List<PlayerPrompts>();
     private string StuffToSayThisFrame;
 
     void Awake()
@@ -59,7 +56,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     void Update()
     {
-
+        //updates input from pudate
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         SenseAround();
@@ -68,17 +65,15 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     private void FixedUpdate()
     {
-        StuffToSayThisFrame = ""; // resets stuff to say this frame every update, if there is something to say, it is filled in again later this update.
+        //StuffToSayThisFrame = ""; // resets stuff to say this frame every update, if there is something to say, it is filled in again later this update.
 
        if(!FreezePlayer)
        MyRigidBody2D.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
 
-        text.text = "Schrutebucks: " + GM.Shrutebucks;
-        //SenseAround();
         //this function includes input monitoring, which should never be in FixedUpdate because many inputs will be missed due to the fixed rate of updates
         //it has been moved to Update
-        speech.text = StuffToSayThisFrame + QuestText + InteractableText;
-        TimerTick();
+        HandlePrompts();
+        //TimerTick();
     }
 
     private void SenseAround()
@@ -89,7 +84,10 @@ public class OfficePlayerGeneral : MonoBehaviour
         }
         if (QuestDetected() && questSystem.haveActiveQuest == false)
         {
-            StuffToSayThisFrame += "Press E to take quest\n";
+            AddPrompt("Press E to take quest", 10);
+
+            //QuestText = "Press E to take quest\n";
+            //QuestTextTimer = 100;
 
             if (Input.GetButtonDown("Fire1"))
             {
@@ -109,32 +107,32 @@ public class OfficePlayerGeneral : MonoBehaviour
 
             }
         }
-        else
-        {
-            speech.text = "";
-        }
 
-        if (InteractableDetected() && InteractableTimer == 0)
+        if (InteractableDetected())
         {
+            //Debug.Log("dafasdfasdff");
             foreach (Collider2D i in InteractableHitResults)
             {
-                if(!i) { continue; }
+               // if(!i) { continue; }
                 if (Input.GetButtonDown("Fire1"))
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
-                    InteractableTimer = 100;
                     FreezePlayer = true;
                     thing.giveprompt();
                 }
                 else
                 {
-                    StuffToSayThisFrame += "Press E to interact with " + i.name + "\n";
+                    AddPrompt("Press E to interact with " + i.name, 10);
+
+                    //InteractableText = "Press E to interact with " + i.name + "\n";
+                    //InteractableTimer = 100;
                     break;
                 }
             }
         }
         if (MinigameDetected())
         {
+            
             foreach (Collider2D i in MinigameHitResults)
             {
                 if (!i) { continue; }
@@ -157,6 +155,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     }
 
+    /*
     private void TimerTick()
     {
         //this function is called once per update to count down how long each prompt text stays visible.
@@ -176,6 +175,7 @@ public class OfficePlayerGeneral : MonoBehaviour
             QuestText = "";
         }
     }
+    */
 
     //various detects returning a bool depending on if certain type is detected in the detection collider.
     private bool QuestDetected()
@@ -210,11 +210,54 @@ public class OfficePlayerGeneral : MonoBehaviour
     {
         if (activate)
         {
-            QuestTextTimer = 100;
-            QuestText = prompt;
+            AddPrompt(prompt,10);
         }
-        else
-            QuestTextTimer = 0;
     }
 
+    private void HandlePrompts()
+    {
+        speech.text = "";
+        for (int i = 0; i < promptToSay.Count; i++)
+        {
+            speech.text += ":";
+            promptToSay[i].Tick();
+            if (promptToSay[i].prompt == "")
+            {
+                promptToSay.Remove(promptToSay[i]);
+            }
+            else
+            {
+                speech.text += promptToSay[i].prompt + "\n";
+            }
+
+            
+        }
+    }
+
+    private void AddPrompt(string prompt,int duration)
+    {
+        bool repeated = false;
+        if (promptToSay.Count > 0)
+        {
+            for(int i = 0;i<promptToSay.Count;i++)
+            {
+                if (prompt == promptToSay[i].prompt)
+                {
+                    repeated = true;
+                    promptToSay[i].timer = duration;
+                }
+                    
+            }
+            if(!repeated)
+                promptToSay.Add(new PlayerPrompts(prompt, duration));
+
+            return;
+        }
+        else
+        {
+            promptToSay.Add(new PlayerPrompts(prompt, duration));
+            return;
+        }
+       
+    }
 }
