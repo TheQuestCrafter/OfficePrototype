@@ -12,9 +12,32 @@ public class Interactiables : MonoBehaviour
     [SerializeField]
     private string objectBlockName;
 
+    DaySystem daySystemScript;
+
+    private void Start()
+    {
+        daySystemScript = GameObject.FindGameObjectWithTag("Player").GetComponent<DaySystem>();
+    }
+
     public void giveprompt()
     {
-        //Calls the block from the object flowchart with the string title given through objectBlockName
-        ObjectDescriptionChart.ExecuteBlock(objectBlockName);
+
+        if(name == "ExitDoor")//if this is the door to leave the office
+        {
+            if(daySystemScript.dayComplete)
+            {
+                ObjectDescriptionChart.ExecuteBlock("Next Day");
+            }
+            else
+            {
+                ObjectDescriptionChart.ExecuteBlock("Day Not Complete");
+            }
+        }
+
+        else
+        {
+            //Calls the block from the object flowchart with the string title given through objectBlockName
+            ObjectDescriptionChart.ExecuteBlock(objectBlockName);
+        }
     }
 }

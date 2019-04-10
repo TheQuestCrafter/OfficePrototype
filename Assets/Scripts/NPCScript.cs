@@ -37,6 +37,9 @@ public class NPCScript : MonoBehaviour
     [SerializeField]
     private int scoreThreeStar = 8;
 
+    GameObject player;
+    DaySystem daySystemScript;
+
 
 
 
@@ -48,6 +51,8 @@ public class NPCScript : MonoBehaviour
     void Start()
     {
         speech.text = "";
+        player = GameObject.FindGameObjectWithTag("Player");
+        daySystemScript = player.GetComponent<DaySystem>();
     }
 
     // Update is called once per frame
@@ -58,7 +63,7 @@ public class NPCScript : MonoBehaviour
 
     public void TalkToNPC()
     {
-        if(readyToStartMinigame)
+        if(readyToStartMinigame && daySystemScript.currentDay == 1)
         {
             if(minigameChart)//make sure they actually have a flowchart assigned
             {
@@ -102,7 +107,12 @@ public class NPCScript : MonoBehaviour
         {
             //zero stars
             Debug.Log("Your score of " + score + " earned you no yogurt lid!");
+            return;
         }
+
+        //at least one star, so give them day completion credit
+        daySystemScript.dayComplete = true;
+
         if (score >= scoreOneStar && score < scoreTwoStar)
         {
             //one star
