@@ -69,7 +69,7 @@ public class Spawner : MonoBehaviour
         {
             EndGameStarted = false;
             //Loads back to the office.
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("TheOffice");
         }
     }
     /// <summary>
