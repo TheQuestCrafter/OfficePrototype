@@ -29,7 +29,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1194892419139678602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.4901211}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1194892419377139495}
@@ -40,7 +40,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -13.579172, y: 1.3501388}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1194892419139678598
@@ -102,6 +102,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speech: {fileID: 1194892419878634944}
   ProximitySpeech: Hi there, I am Jimothy
+  identifier: 
+  minigameChart: {fileID: 0}
+  minigameBlockName: 
+  readyToStartMinigame: 0
+  minigameProximityText: 
+  scoreOneStar: 3
+  scoreTwoStar: 6
+  scoreThreeStar: 8
+  playerTouching: 0
 --- !u!58 &1194892419139678599
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -236,8 +245,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03, y: 0.88}
-  m_SizeDelta: {x: 99.99977, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0.8}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1194892419878634945
 MeshRenderer:
@@ -332,8 +341,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00000010431, y: 0}
-  m_SizeDelta: {x: 99.99977, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1194892419892720610
 MeshRenderer:
