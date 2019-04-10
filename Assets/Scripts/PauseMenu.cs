@@ -9,6 +9,10 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject pauseMenuPanel;
+    [SerializeField]
+    private GameObject statsPanel;
+    [SerializeField]
+    private GameObject darkPanel;
 
     private void Update()
     {
@@ -28,14 +32,16 @@ public class PauseMenu : MonoBehaviour
     private void Pause()
     {
         pauseMenuPanel.SetActive(true);
+        darkPanel.SetActive(true);
         Time.timeScale = 0f;
-        gameIsPaused = true;
-        
+        gameIsPaused = true;        
     }
 
     public void Resume()
     {
         pauseMenuPanel.SetActive(false);
+        statsPanel.SetActive(false);
+        darkPanel.SetActive(false);
         Time.timeScale = 1f;
         gameIsPaused = false;
     }
