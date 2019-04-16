@@ -1852,8 +1852,13 @@ GameObject:
   - component: {fileID: 425092074}
   - component: {fileID: 425092078}
   - component: {fileID: 425092077}
+  - component: {fileID: 425092082}
+  - component: {fileID: 425092081}
+  - component: {fileID: 425092080}
+  - component: {fileID: 425092079}
+  - component: {fileID: 425092083}
   m_Layer: 0
-  m_Name: TestQuestFlowchart
+  m_Name: TaskFlowchart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1872,18 +1877,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -116.51314, y: 642.2641}
+  scrollPos: {x: 382.09213, y: 18.474785}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.49000046
+  zoom: 0.85000014
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 425092056}
   selectedCommands: []
   variables: []
   description: 
@@ -1910,9 +1916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: 'Hey, kid. I need you to go give this to Angela.
-
-'
+  storyText: "Hey there, champ! I have something for you. Your first official office
+    task! \n"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1939,19 +1944,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 70
-    width: 120
+    x: 65.82353
+    y: 73.52941
+    width: 161.37253
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: StartQuest
+  blockName: StartDeliveryQuest1
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 425092055}
   - {fileID: 425092062}
+  - {fileID: 425092083}
   - {fileID: 425092063}
 --- !u!4 &425092057
 Transform:
@@ -2010,12 +2016,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 60
     y: 159
-    width: 120
+    width: 164.50978
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 7
-  blockName: FinishQuest
+  blockName: FinishDeliveryQuest1
   description: 
   eventHandler: {fileID: 0}
   commandList:
@@ -2091,7 +2097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 6
   indentLevel: 0
-  storyText: So... Go do that.
+  storyText: "We ran out of coffee last week, so to boost morale and make sure Stanley
+    doesn\u2019t hurt anyone again, I picked up these beans over the weekend. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2152,9 +2159,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: 'You think you''ve got what it takes to be a part of this office, intern?
-
-    Have you even reviewed section 16 A of the fire protocol code?'
+  storyText: 'Alright, intern. Pop quiz: what is the procedure if there is a fire
+    here in the office?'
   description: 
   character: {fileID: 1378181677}
   portrait: {fileID: 0}
@@ -2181,9 +2187,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 293
+    x: 288.2941
     y: 48
-    width: 174.48969
+    width: 186.47057
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2194,6 +2200,10 @@ MonoBehaviour:
   commandList:
   - {fileID: 425092076}
   - {fileID: 425092065}
+  - {fileID: 425092082}
+  - {fileID: 425092081}
+  - {fileID: 425092080}
+  - {fileID: 425092079}
   - {fileID: 425092073}
   - {fileID: 425092071}
 --- !u!114 &425092067
@@ -2210,9 +2220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 213
+    x: 211.82353
     y: 115
-    width: 149.99991
+    width: 158.23528
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2255,7 +2265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 19
   indentLevel: 0
-  storyText: Then let's see you put it to use!
+  storyText: "Fires don\u2019t wait \u2018til you\u2019re ready. Go!"
   description: 
   character: {fileID: 1378181677}
   portrait: {fileID: 0}
@@ -2282,7 +2292,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 18
   indentLevel: 0
-  storyText: Come back to me when you're ready for a real challenge.
+  storyText: "Well then hurry up and come back when you are. We don\u2019t have all
+    day. "
   description: 
   character: {fileID: 1378181677}
   portrait: {fileID: 0}
@@ -2336,7 +2347,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 401
     y: 114.5
-    width: 152.04071
+    width: 159.8039
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2361,7 +2372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  text: Of course! I can handle anything you throw at me.
+  text: "Yes, I\u2019m ready."
   description: 
   targetBlock: {fileID: 425092067}
   hideIfVisited: 0
@@ -2458,7 +2469,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 338.9619
     y: 318.95947
-    width: 125.51013
+    width: 133.13724
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2468,6 +2479,144 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 425092077}
+--- !u!114 &425092079
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 31
+  indentLevel: 0
+  storyText: "Are you ready to make Dunder Mifflin\u2019s Chief safety officer proud? "
+  description: 
+  character: {fileID: 1378181677}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092080
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 30
+  indentLevel: 0
+  storyText: "I am going to set a series of fires here in the office, and it\u2019s
+    your job to demonstrate proper fire safety technique."
+  description: 
+  character: {fileID: 1378181677}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092081
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 29
+  indentLevel: 0
+  storyText: Therefore, I need to test you. Thoroughly.
+  description: 
+  character: {fileID: 1378181677}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092082
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 28
+  indentLevel: 0
+  storyText: Trick question, because not a single person paid attention when I gave
+    the fire safety presentation last week.
+  description: 
+  character: {fileID: 1378181677}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092083
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 32
+  indentLevel: 0
+  storyText: "\rCould you get this coffee to Kevin? He\u2019ll get a pot going, he
+    always needs a good cuppa joe.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &425780631
 GameObject:
   m_ObjectHideFlags: 0
@@ -2875,8 +3024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questSystem: {fileID: 1140406571}
-  questName: TestQuest
-  questTextInitial: Go to Angela.
+  questName: StartDeliveryQuest1
+  questTextInitial: Go to Kevin.
   questStep: 0
   angela: {fileID: 200582335}
   questStep2Text: Good job! Task complete.
@@ -5125,8 +5274,8 @@ Transform:
   - {fileID: 182108373}
   - {fileID: 247683333553607021}
   - {fileID: 2018188360}
-  - {fileID: 2732017637128444449}
   - {fileID: 1993195003}
+  - {fileID: 2732017637128444449}
   - {fileID: 1792335388}
   - {fileID: 79978880}
   - {fileID: 410473650}
@@ -7009,7 +7158,7 @@ Transform:
   - {fileID: 326194745}
   - {fileID: 1342207116}
   m_Father: {fileID: 1244347069}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2018188359
 GameObject:
