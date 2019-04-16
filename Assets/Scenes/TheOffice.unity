@@ -1845,6 +1845,8 @@ GameObject:
   - component: {fileID: 425092080}
   - component: {fileID: 425092079}
   - component: {fileID: 425092083}
+  - component: {fileID: 425092085}
+  - component: {fileID: 425092084}
   m_Layer: 0
   m_Name: TaskFlowchart
   m_TagString: Untagged
@@ -1865,19 +1867,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 382.09213, y: 18.474785}
+  scrollPos: {x: 934.812, y: 60.47618}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.85000014
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 425092056}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -1932,9 +1933,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65.82353
-    y: 73.52941
-    width: 161.37253
+    x: 65.823524
+    y: 79.29863
+    width: 184.61526
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2004,7 +2005,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 60
     y: 159
-    width: 164.50978
+    width: 191.02551
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2177,7 +2178,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 288.2941
     y: 48
-    width: 186.47057
+    width: 211.53831
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2210,7 +2211,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.82353
     y: 115
-    width: 158.23528
+    width: 179.48706
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2335,7 +2336,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 401
     y: 114.5
-    width: 159.8039
+    width: 182.05116
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2455,9 +2456,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 338.9619
-    y: 318.95947
-    width: 133.13724
+    x: 315.88513
+    y: 203.57481
+    width: 152.56401
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2466,6 +2467,8 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 425092085}
+  - {fileID: 425092084}
   - {fileID: 425092077}
 --- !u!114 &425092079
 MonoBehaviour:
@@ -2593,6 +2596,62 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\rCould you get this coffee to Kevin? He\u2019ll get a pot going, he
     always needs a good cuppa joe.\r\n"
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092084
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: "I made this chili! We can\u2019t get any work done until we\u2019ve
+    all gotten our chili. I\u2019ll scoop, you catch."
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092085
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  storyText: What? I have something way more important I need to do. You can help
+    me.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
