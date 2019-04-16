@@ -453,18 +453,6 @@ Transform:
   m_Father: {fileID: 1244347069}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &200582335 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1080017590}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9974c080ca4a7a489dce008a908f677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &215550485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3027,9 +3015,9 @@ MonoBehaviour:
   questName: StartDeliveryQuest1
   questTextInitial: Go to Kevin.
   questStep: 0
-  angela: {fileID: 200582335}
-  questStep2Text: Good job! Task complete.
-  updatedAngelaText: Thanks for delivering that.
+  angela: {fileID: 523492567}
+  questStep2Text: Go to Creed.
+  updatedAngelaText: 
   timeToFinish: 3
   prompt1: Press E to interact.
   questFlowchart: {fileID: 425092054}
@@ -3341,6 +3329,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15031584a391941448ed1af9264815cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &523492567 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+    type: 3}
+  m_PrefabInstance: {fileID: 523492563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523492564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9974c080ca4a7a489dce008a908f677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &537176440
