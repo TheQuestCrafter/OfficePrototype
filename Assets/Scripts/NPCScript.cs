@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class NPCScript : MonoBehaviour
 {
@@ -13,10 +14,16 @@ public class NPCScript : MonoBehaviour
     [SerializeField]
     private string identifier;
 
+    [SerializeField]
+    [Tooltip("A referene to the Quest system")]
+    private GameObject MinigameDetector;
+
     [Header("Minigame Settings")]
+
     [SerializeField]
     [Tooltip("The chart that holds the NPC's minigame, if they have one")]
     private Flowchart minigameChart;
+
     [SerializeField]
     [Tooltip("The name of the block that starts their minigame, such as DwightFireMinigameStart")]
     private string minigameBlockName;
@@ -38,8 +45,6 @@ public class NPCScript : MonoBehaviour
     private int scoreThreeStar = 8;
 
 
-
-
     public bool playerTouching = false;
 
     //private Collider2D ProximityCheck = new Collider2D();
@@ -48,19 +53,17 @@ public class NPCScript : MonoBehaviour
     void Start()
     {
         speech.text = "";
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (minigameChart==null)
+            MinigameDetector.SetActive(false);
     }
 
     public void TalkToNPC()
     {
         if(readyToStartMinigame)
         {
-            if(minigameChart)//make sure they actually have a flowchart assigned
+
+            if (minigameChart)//make sure they actually have a flowchart assigned
             {
                 minigameChart.ExecuteBlock(minigameBlockName);
             }
@@ -80,6 +83,7 @@ public class NPCScript : MonoBehaviour
             if (fireSpawningScript.CanStartMinigame() && readyToStartMinigame)
             {
                 readyToStartMinigame = false;
+                MinigameDetector.SetActive(false);
                 fireSpawningScript.StartFireMinigame(8);
             }
         }
@@ -88,6 +92,7 @@ public class NPCScript : MonoBehaviour
     public void ResetMinigame(int earnedScore)//resets settings so the player can attempt the minigame again, and reports the score they got
     {
         readyToStartMinigame = true;
+        MinigameDetector.SetActive(true);
         score = earnedScore;
         if(score > bestScore)
         {

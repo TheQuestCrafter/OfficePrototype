@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2818186149401761768}
   - component: {fileID: 1194892419139678592}
   - component: {fileID: 1194892419139678599}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,6 +35,7 @@ RectTransform:
   - {fileID: 1194892419377139495}
   - {fileID: 1194892419892720608}
   - {fileID: 1194892419878634951}
+  - {fileID: 7814430146868109002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103,10 +104,13 @@ MonoBehaviour:
   speech: {fileID: 1194892419878634944}
   ProximitySpeech: Hi there, I am Jimothy
   identifier: 
+  MinigameDetector: {fileID: 8020941057428765361}
+  TaskTypeOfferedByNPC: 3
   minigameChart: {fileID: 0}
   minigameBlockName: 
   readyToStartMinigame: 0
   minigameProximityText: 
+  minigameSceneName: 
   scoreOneStar: 3
   scoreTwoStar: 6
   scoreThreeStar: 8
@@ -137,7 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1194892419377139495}
   - component: {fileID: 1194892419377139488}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +226,7 @@ GameObject:
   - component: {fileID: 1194892419878634951}
   - component: {fileID: 1194892419878634945}
   - component: {fileID: 1194892419878634944}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: SpeechText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -318,7 +322,7 @@ GameObject:
   - component: {fileID: 1194892419892720608}
   - component: {fileID: 1194892419892720610}
   - component: {fileID: 1194892419892720609}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: NameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,3 +407,50 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!1 &8020941057428765361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7814430146868109002}
+  - component: {fileID: 4358830040444620378}
+  m_Layer: 13
+  m_Name: Minigame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7814430146868109002
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020941057428765361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1194892419139678603}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &4358830040444620378
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8020941057428765361}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.38

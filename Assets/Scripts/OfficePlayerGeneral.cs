@@ -8,14 +8,18 @@ public class OfficePlayerGeneral : MonoBehaviour
     [SerializeField]
     [Tooltip("The Player's movement speed, 10 used for testing")]
     private float moveSpeed = 10f;
+
     [SerializeField]
     Text text;
+
     [SerializeField]
     [Tooltip("A referene to the player's speech bubble textmesh")]
     private TextMesh speech;
+
     [SerializeField]
     [Tooltip("A referene to the Quest system")]
     private QuestSystem questSystem;
+
 
     [SerializeField]
     [Tooltip("Collider 2D that detects everything around player and runs them through filters below")]
@@ -136,9 +140,15 @@ public class OfficePlayerGeneral : MonoBehaviour
             foreach (Collider2D i in MinigameHitResults)
             {
                 if (!i) { continue; }
+
                 if (Input.GetButtonDown("Fire1"))
                 {
-                    i.GetComponent<NPCScript>().TalkToNPC();
+                    i.GetComponentInParent<NPCScript>().TalkToNPC();
+                }
+                else
+                {
+                    AddPrompt("Press E to accept task from " + i.name, 10);
+                    break;
                 }
             }
         }

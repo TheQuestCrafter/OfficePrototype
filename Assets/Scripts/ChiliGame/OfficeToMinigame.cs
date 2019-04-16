@@ -3,18 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class OfficeToMinigame : MonoBehaviour
+public class OfficeToMinigame 
 {
-    [SerializeField]
-    private int sceneNum;
-    Scene scene = new Scene();
-    private Collider2D ProximityCheck = new Collider2D();
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public static void StartMiniGame(string sceneToLoad)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            //sends player to selected scene upon collision
-            SceneManager.LoadScene(sceneNum);
-        }
+            SceneManager.LoadScene(sceneToLoad);
     }
 }
