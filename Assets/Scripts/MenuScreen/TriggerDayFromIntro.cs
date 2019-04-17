@@ -9,6 +9,9 @@ public class TriggerDayFromIntro : MonoBehaviour
     [SerializeField]
     public string sceneDayToLoad;
 
+    [SerializeField]
+    private AudioSource doorOpen;
+
     private void Start()
     {
         sceneFader = GetComponent<SceneFader>();
@@ -18,6 +21,7 @@ public class TriggerDayFromIntro : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            doorOpen.Play();
             sceneFader.FadeTo(sceneDayToLoad);
         }
     }

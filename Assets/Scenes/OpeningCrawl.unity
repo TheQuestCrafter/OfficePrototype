@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textCrawl: {fileID: 1347136408}
-  dayScene: TheOffice
+  dayScene: DayStart
 --- !u!4 &846422705
 Transform:
   m_ObjectHideFlags: 0
