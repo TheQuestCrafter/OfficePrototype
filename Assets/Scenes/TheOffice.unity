@@ -569,7 +569,7 @@ PrefabInstance:
     - target: {fileID: 715128493912290465, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
       propertyPath: m_Name
-      value: TestQuest
+      value: dayQuest
       objectReference: {fileID: 0}
     - target: {fileID: 715128493912290465, guid: 28dddf9191fa5b5408222fad745d0393,
         type: 3}
@@ -1724,11 +1724,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 0, y: 0}
+  scrollPos: {x: 339.91916, y: 58.540176}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -1836,6 +1836,16 @@ PrefabInstance:
         type: 3}
       propertyPath: ProximitySpeech
       value: Hey, have you seen Ryan recently?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: StartDeliveryQuest1
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -1973,11 +1983,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7814430146868109002, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 2546140206627119507, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Controller
@@ -1988,6 +1993,11 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: 7ac714635b2d2054aa235a7e1a09ff76, type: 2}
+    - target: {fileID: 7814430146868109002, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
 --- !u!1 &425092053
@@ -2030,6 +2040,14 @@ GameObject:
   - component: {fileID: 425092083}
   - component: {fileID: 425092085}
   - component: {fileID: 425092084}
+  - component: {fileID: 425092087}
+  - component: {fileID: 425092086}
+  - component: {fileID: 425092093}
+  - component: {fileID: 425092092}
+  - component: {fileID: 425092091}
+  - component: {fileID: 425092090}
+  - component: {fileID: 425092089}
+  - component: {fileID: 425092088}
   m_Layer: 0
   m_Name: TaskFlowchart
   m_TagString: Untagged
@@ -2050,11 +2068,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 934.812, y: 60.47618}
+  scrollPos: {x: 728.5279, y: 45.355217}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.52000046
+  zoom: 0.6099999
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -2062,8 +2080,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 425092059}
-  selectedCommands: []
+  - {fileID: 425092093}
+  selectedCommands:
+  - {fileID: 425092089}
   variables: []
   description: 
   stepPause: 0
@@ -2117,9 +2136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 65.823524
-    y: 81.2217
-    width: 184.61526
+    x: 3.5284348
+    y: 59.91024
+    width: 154.91806
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2160,7 +2179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: Oh.
+  storyText: Oh great, coffee!
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2187,20 +2206,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 60
-    y: 159
-    width: 191.02551
+    x: -0.6557274
+    y: 122.93445
+    width: 153.60657
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 7
-  blockName: FinishDeliveryQuest1
+  blockName: DeliveryQuestStep1
   description: 
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 425092058}
   - {fileID: 425092061}
   - {fileID: 425092060}
+  - {fileID: 425092087}
+  - {fileID: 425092086}
   - {fileID: 425092064}
 --- !u!114 &425092060
 MonoBehaviour:
@@ -2216,7 +2237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: ..Thanks.
+  storyText: Why is this bag of coffee filled with a bunch of little beans?
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -2362,7 +2383,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 288.2941
     y: 48
-    width: 211.53831
+    width: 182.45905
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2395,7 +2416,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.82353
     y: 115
-    width: 179.48706
+    width: 150.98363
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2520,7 +2541,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 401
     y: 114.5
-    width: 182.05116
+    width: 154.91806
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2642,7 +2663,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 315.88513
     y: 203.57481
-    width: 152.56401
+    width: 133.93445
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2848,6 +2869,215 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &425092086
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  storyText: You can give it to Creed. He likes beans, I think.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092087
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: I can't drink beans.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  targetObject: {fileID: 926774419}
+  methodName: UnfreezePlayer
+  delay: 0
+--- !u!114 &425092089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  storyText: Thanks, Intern. I'll enjoy it at home with a fresh biscuit.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  storyText: But that hasn't stopped me before.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  storyText: I'm probably not supposed to take bribes...
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: Ooh! A Columbian medium dark roast. Quite the summer blend.
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092093
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 15.73459
+    y: 182.5137
+    width: 153.60657
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 37
+  blockName: DeliveryQuestStep2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 425092092}
+  - {fileID: 425092091}
+  - {fileID: 425092090}
+  - {fileID: 425092089}
+  - {fileID: 425092088}
 --- !u!1 &425780631
 GameObject:
   m_ObjectHideFlags: 0
@@ -3359,21 +3589,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 519509383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3f5fa27939700418beca418126bb61, type: 3}
+  m_Script: {fileID: 11500000, guid: 75c53c2470a662d428ef91d89a8e37aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   questSystem: {fileID: 1140406571}
-  questName: StartDeliveryQuest1
-  questTextInitial: Go to Kevin.
+  questName: dayQuest
+  questTextInitial: Go to Kevin
   questStep: 0
-  angela: {fileID: 523492567}
+  NPC1: {fileID: 523492567}
+  NPC2: {fileID: 780382756}
   questStep2Text: Go to Creed.
-  updatedAngelaText: 
-  timeToFinish: 3
-  prompt1: Press E to interact.
+  questStep3Text: Good Job!
+  updatedNPC1Text: Head to Creed.
+  updatedNPC2Text: Thanks for the beans.
+  timeToFinish: 0
+  prompt1: Go to Kevin.
   questFlowchart: {fileID: 425092054}
-  Step1BlockName: StartQuest
-  Step2BlockName: FinishQuest
+  Step1BlockName: StartDeliveryQuest1
+  Step2BlockName: DeliveryQuestStep1
+  Step3BlockName: DeliveryQuestStep2
 --- !u!1 &520697684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,7 +3880,7 @@ PrefabInstance:
     - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: readyToStartMinigame
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -3784,16 +4018,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419878634944, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Speech
-      objectReference: {fileID: 0}
-    - target: {fileID: 1237856583894569099, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: f33a6833fed669f4d8352e3ef778c3c4, type: 2}
     - target: {fileID: 2546140206627119507, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Controller
@@ -3814,6 +4038,16 @@ PrefabInstance:
       propertyPath: m_Animations.Array.data[0]
       value: 
       objectReference: {fileID: 7400000, guid: 76c413a0334a67d4d846bd611f3d4e8c, type: 2}
+    - target: {fileID: 1194892419878634944, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Speech
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237856583894569099, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f33a6833fed669f4d8352e3ef778c3c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
 --- !u!1 &523492564 stripped
@@ -4390,6 +4624,18 @@ PrefabInstance:
       objectReference: {fileID: 7400000, guid: 9623f6865861c3d4dae431156d4cc71a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
+--- !u!114 &780382756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+    type: 3}
+  m_PrefabInstance: {fileID: 780382755}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9974c080ca4a7a489dce008a908f677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &797990921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5279,11 +5525,6 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678598, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2546140206627119507, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Controller
@@ -5294,6 +5535,11 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: 19e0893267b47084c9b28d0868eec23a, type: 2}
+    - target: {fileID: 1194892419139678598, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
 --- !u!224 &946547901 stripped
@@ -5699,6 +5945,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: e4cef0eb284d8784e83db1399fde757a, type: 2}
     - target: {fileID: 1237856583894569099, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Controller
@@ -5717,11 +5968,6 @@ PrefabInstance:
     - target: {fileID: 1265719333915857094, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animations.Array.data[1]
-      value: 
-      objectReference: {fileID: 7400000, guid: e4cef0eb284d8784e83db1399fde757a, type: 2}
-    - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: e4cef0eb284d8784e83db1399fde757a, type: 2}
     m_RemovedComponents:
@@ -6000,7 +6246,8 @@ MonoBehaviour:
   questName: 
   haveActiveQuest: 0
   questStep: 0
-  testQuest: {fileID: 519509384}
+  testQuest: {fileID: 0}
+  dayQuest: {fileID: 519509384}
   player: {fileID: 926774420}
   questText: {fileID: 2018532257}
 --- !u!224 &1146810471 stripped
@@ -9838,6 +10085,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
+      propertyPath: questSystem
+      value: 
+      objectReference: {fileID: 1140406571}
+    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3679182616047054725, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9942,18 +10201,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
-      propertyPath: questSystem
-      value: 
-      objectReference: {fileID: 1140406571}
-    - target: {fileID: 926774426, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
-      propertyPath: moveSpeed
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3679182617184204691, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}

@@ -10,10 +10,12 @@ public class QuestSystem : MonoBehaviour
     public string questName;
     public bool haveActiveQuest = false;
     public int questStep = 0;
-    string[] questList = new string[5] { "TestQuest", "", "", "", "" };
+    string[] questList = new string[5] { "TestQuest", "dayQuest", "", "", "" };
 
     [SerializeField]
     private TestQuest testQuest;
+    [SerializeField]
+    private DayDeliveryQuest dayQuest;
     [SerializeField]
     OfficePlayerGeneral player;
     [SerializeField]
@@ -55,7 +57,7 @@ public class QuestSystem : MonoBehaviour
         }
         else if (givenQuestName == questList[1])
         {
-
+            dayQuest.StartQuest();
         }
         else if (givenQuestName == questList[2])
         {
