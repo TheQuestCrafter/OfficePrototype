@@ -105,12 +105,10 @@ MonoBehaviour:
   ProximitySpeech: Hi there, I am Jimothy
   identifier: 
   MinigameDetector: {fileID: 8020941057428765361}
-  TaskTypeOfferedByNPC: 3
   minigameChart: {fileID: 0}
   minigameBlockName: 
   readyToStartMinigame: 0
   minigameProximityText: 
-  minigameSceneName: 
   scoreOneStar: 3
   scoreTwoStar: 6
   scoreThreeStar: 8
@@ -141,6 +139,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1194892419377139495}
   - component: {fileID: 1194892419377139488}
+  - component: {fileID: 2546140206627119507}
+  - component: {fileID: 6880583679195536880}
   m_Layer: 14
   m_Name: Sprite
   m_TagString: Untagged
@@ -215,6 +215,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2546140206627119507
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194892419377139494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dd100936dbad2554a81bf0b61364e13a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &6880583679195536880
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1194892419377139494}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1194892419878634950
 GameObject:
   m_ObjectHideFlags: 0
