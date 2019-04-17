@@ -38,7 +38,8 @@ public class OfficePlayerGeneral : MonoBehaviour
     private ContactFilter2D MinigameContactFilter;
 
     private bool FreezePlayer;
-    Rigidbody2D MyRigidBody2D;
+    private Rigidbody2D MyRigidBody2D;
+    private Animator playerAnim;
     private GlobalInformation GM = new GlobalInformation();
     private float horizontal;
     private float vertical;
@@ -56,6 +57,7 @@ public class OfficePlayerGeneral : MonoBehaviour
         StuffToSayThisFrame = "";
         GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
         MyRigidBody2D = this.GetComponent<Rigidbody2D>();
+        playerAnim = this.transform.GetChild(0).GetComponent<Animator>();
     }
 
     void Update()
@@ -64,7 +66,7 @@ public class OfficePlayerGeneral : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         SenseAround();
-
+        UpdateAnimation();
     }
 
     private void FixedUpdate()
@@ -78,6 +80,26 @@ public class OfficePlayerGeneral : MonoBehaviour
         //it has been moved to Update
         HandlePrompts();
         //TimerTick();
+    }
+
+    private void UpdateAnimation()
+    {
+        playerAnim.SetFloat("xVelocity", Mathf.Abs(MyRigidBody2D.velocity.x));
+        playerAnim.SetFloat("yVelocity", MyRigidBody2D.velocity.y);
+
+        //Sprite Flipping
+        if (MyRigidBody2D.velocity.x > 0.1)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if (MyRigidBody2D.velocity.x < -0.1)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
     }
 
     private void SenseAround()
