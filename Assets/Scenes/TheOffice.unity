@@ -2272,9 +2272,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 425092066}
+  - {fileID: 425092093}
   selectedCommands:
-  - {fileID: 425092065}
+  - {fileID: 425092089}
   variables: []
   description: 
   stepPause: 0
@@ -2303,8 +2303,8 @@ MonoBehaviour:
   storyText: "Hey there, champ! I have something for you. Your first official office
     task! \n"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1457402998}
+  portrait: {fileID: 21300000, guid: 7dc5940bf3ff19947a6884efffb02549, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2373,8 +2373,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Oh great, coffee!
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2431,8 +2431,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Why is this bag of coffee filled with a bunch of little beans?
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2458,8 +2458,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: '...'
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2486,8 +2486,8 @@ MonoBehaviour:
   storyText: "We ran out of coffee last week, so to boost morale and make sure Stanley
     doesn\u2019t hurt anyone again, I picked up these beans over the weekend. "
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1457402998}
+  portrait: {fileID: 21300000, guid: 7dc5940bf3ff19947a6884efffb02549, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2654,7 +2654,7 @@ MonoBehaviour:
   storyText: "Fires don\u2019t wait \u2018til you\u2019re ready. Go!"
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2682,7 +2682,7 @@ MonoBehaviour:
     day. "
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2884,7 +2884,7 @@ MonoBehaviour:
   storyText: "Are you ready to make Dunder Mifflin\u2019s Chief safety officer proud? "
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2912,7 +2912,7 @@ MonoBehaviour:
     your job to demonstrate proper fire safety technique."
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2939,7 +2939,7 @@ MonoBehaviour:
   storyText: Therefore, I need to test you. Thoroughly.
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2967,7 +2967,7 @@ MonoBehaviour:
     the fire safety presentation last week.
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -2994,8 +2994,8 @@ MonoBehaviour:
   storyText: "\rCould you get this coffee to Kevin? He\u2019ll get a pot going, he
     always needs a good cuppa joe.\r\n"
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1457402998}
+  portrait: {fileID: 21300000, guid: 7dc5940bf3ff19947a6884efffb02549, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3022,8 +3022,8 @@ MonoBehaviour:
   storyText: "I made this chili! We can\u2019t get any work done until we\u2019ve
     all gotten our chili. I\u2019ll scoop, you catch."
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3050,8 +3050,8 @@ MonoBehaviour:
   storyText: What? I have something way more important I need to do. You can help
     me.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3077,8 +3077,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: You can give it to Creed. He likes beans, I think.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3104,8 +3104,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I can't drink beans.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 883137135}
+  portrait: {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3148,8 +3148,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Thanks, Intern. I'll enjoy it at home with a fresh biscuit.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 186890242}
+  portrait: {fileID: 21300000, guid: 95991e4271a7db94dbe00411a642883f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3175,8 +3175,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: But that hasn't stopped me before.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 186890242}
+  portrait: {fileID: 21300000, guid: 95991e4271a7db94dbe00411a642883f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3202,8 +3202,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: I'm probably not supposed to take bribes...
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 186890242}
+  portrait: {fileID: 21300000, guid: 95991e4271a7db94dbe00411a642883f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3229,8 +3229,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: Ooh! A Columbian medium dark roast. Quite the summer blend.
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 186890242}
+  portrait: {fileID: 21300000, guid: 95991e4271a7db94dbe00411a642883f, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
