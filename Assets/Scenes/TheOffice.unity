@@ -684,9 +684,10 @@ MonoBehaviour:
   nameText: Creed
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 95991e4271a7db94dbe00411a642883f, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1001 &215550485
 PrefabInstance:
@@ -1540,7 +1541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350130026
 GameObject:
@@ -1902,7 +1903,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &372130751
 MonoBehaviour:
@@ -2000,9 +2001,10 @@ MonoBehaviour:
   nameText: Toby
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: fb96dafb4fb2a594f8e5bb1e5d7235be, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!4 &410473650 stripped
 Transform:
@@ -2270,8 +2272,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 425092056}
-  selectedCommands: []
+  - {fileID: 425092066}
+  selectedCommands:
+  - {fileID: 425092065}
   variables: []
   description: 
   stepPause: 0
@@ -2352,7 +2355,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425092058
 MonoBehaviour:
@@ -2546,7 +2549,7 @@ MonoBehaviour:
     here in the office?'
   description: 
   character: {fileID: 1378181677}
-  portrait: {fileID: 0}
+  portrait: {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -3485,7 +3488,7 @@ Transform:
   - {fileID: 1223101019}
   - {fileID: 702421226}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &456754802
 GameObject:
@@ -3533,9 +3536,10 @@ MonoBehaviour:
   nameText: Pam
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 34413e065bf587748993000230f2bf98, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &474261328
 GameObject:
@@ -3811,7 +3815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519509383 stripped
 GameObject:
@@ -4515,7 +4519,7 @@ Transform:
   - {fileID: 522818281}
   - {fileID: 883050921}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &609470596
 GameObject:
@@ -5499,9 +5503,10 @@ MonoBehaviour:
   nameText: Angela
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 7e230de201045f841906df4570a1d20f, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!4 &842493412 stripped
 Transform:
@@ -5559,7 +5564,7 @@ PrefabInstance:
     - target: {fileID: 7472094167804063202, guid: 506fc7a44c3f9c04c83c00decb219ff6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7472094167804063202, guid: 506fc7a44c3f9c04c83c00decb219ff6,
         type: 3}
@@ -5795,9 +5800,10 @@ MonoBehaviour:
   nameText: Kevin
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 951ff263e40ee3948a70abb9f766d417, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &890131030
 GameObject:
@@ -5965,7 +5971,7 @@ Transform:
   - {fileID: 811302692}
   - {fileID: 1960422627}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &913911064
 MonoBehaviour:
@@ -6627,9 +6633,10 @@ MonoBehaviour:
   nameText: Oscar
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 6c8800a939ccc0041a8b8d9f923f2994, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1001 &1080017590
 PrefabInstance:
@@ -7063,7 +7070,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1140406571
 MonoBehaviour:
@@ -7857,7 +7864,7 @@ Transform:
   m_Children:
   - {fileID: 1190125016}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1342207116 stripped
 Transform:
@@ -7911,9 +7918,10 @@ MonoBehaviour:
   nameText: Dwight
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 978948315fe77fa4b8c3e886f7ac46e5, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &1390385855
 GameObject:
@@ -7957,7 +7965,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1390385858
 CircleCollider2D:
@@ -8127,9 +8135,10 @@ MonoBehaviour:
   nameText: Jim
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 338f40eead2efe648a065b2bc37d5d8a, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &1457402996
 GameObject:
@@ -8177,9 +8186,10 @@ MonoBehaviour:
   nameText: Michael
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 7dc5940bf3ff19947a6884efffb02549, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &1491333288
 GameObject:
@@ -8504,9 +8514,10 @@ MonoBehaviour:
   nameText: Stanley
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 21300000, guid: 7d586c049d9b76f43ac8ee91722e147d, type: 3}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1 &1547851643
 GameObject:
@@ -9397,7 +9408,7 @@ RectTransform:
   m_Children:
   - {fileID: 2001160579}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9712,9 +9723,10 @@ MonoBehaviour:
   nameText: Kelly
   nameColor: {r: 1, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
-  portraits: []
+  portraits:
+  - {fileID: 0}
   portraitsFace: 0
-  setSayDialog: {fileID: 0}
+  setSayDialog: {fileID: 1775943383}
   description: 
 --- !u!1001 &1866899662
 PrefabInstance:
@@ -11781,7 +11793,7 @@ PrefabInstance:
     - target: {fileID: 3679182616047054725, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3679182616047054725, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
