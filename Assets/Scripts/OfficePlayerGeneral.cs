@@ -139,7 +139,7 @@ public class OfficePlayerGeneral : MonoBehaviour
             //Debug.Log("dafasdfasdff");
             foreach (Collider2D i in InteractableHitResults)
             {
-               // if(!i) { continue; }
+               if(!i) { continue; }
                 if (Input.GetButtonDown("Fire1"))
                 {
                     Interactiables thing = i.GetComponentInParent<Interactiables>();
