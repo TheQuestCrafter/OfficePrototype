@@ -66,7 +66,7 @@ public class FireSpawning : MonoBehaviour
         }
         canSpawnFire = true;
         totalFires = numFires;
-        popupText.DisplayPopupText("Put out the fires before the office burns down!");
+        popupText.DisplayPopupText("Put out the fires before the office burns down!", 0, 3);
         minigameIsRunning = true;
     }
 
@@ -89,7 +89,7 @@ public class FireSpawning : MonoBehaviour
 
     public void EndFireMinigame()//ends the game and shows how many fires you extinguished
     {
-        popupText.DisplayPopupText("Fires extinguished: " + firesExtinguished + "/" + totalFires);
+        //popupText.DisplayPopupText("Fires extinguished: " + firesExtinguished + "/" + totalFires);
         startingObject.GetComponent<NPCScript>().ResetMinigame(firesExtinguished);
 
         //clear the game in case it's played again

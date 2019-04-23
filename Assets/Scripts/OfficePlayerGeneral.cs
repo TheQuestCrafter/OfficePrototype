@@ -248,6 +248,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     private void HandlePrompts()
     {
+        return;//removing prompts due to feedback
         speech.text = "";
         for (int i = 0; i < promptToSay.Count; i++)
         {
@@ -268,6 +269,7 @@ public class OfficePlayerGeneral : MonoBehaviour
 
     private void AddPrompt(string prompt,int duration)
     {
+        return;//removing prompts due to feedback
         bool repeated = false;
         if (promptToSay.Count > 0)
         {

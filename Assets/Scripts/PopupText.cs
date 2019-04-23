@@ -7,6 +7,9 @@ public class PopupText : MonoBehaviour
 {
 
     public Text popupText;
+    public Image bronzeMedal;
+    public Image silverMedal;
+    public Image goldMedal;
 
     // Start is called before the first frame update
     void Start()
@@ -14,11 +17,28 @@ public class PopupText : MonoBehaviour
         gameObject.SetActive(false);//hide the popup when the game starts
     }
 
-    public void DisplayPopupText(string textToDisplay, float displayTime=3)
+    public void DisplayPopupText(string textToDisplay, int medalTier, float displayTime=3)
     {
         gameObject.SetActive(true);
         popupText.text = textToDisplay;
         StartCoroutine(HidePopupTextCoroutine(displayTime));
+        if(medalTier <= 0)
+        {
+            //show no medal
+            bronzeMedal.enabled = false; silverMedal.enabled = false; goldMedal.enabled = false;
+        }
+        else if(medalTier == 1)
+        {
+            bronzeMedal.enabled = false; silverMedal.enabled = false; goldMedal.enabled = true;
+        }
+        else if (medalTier == 2)
+        {
+            bronzeMedal.enabled = false; silverMedal.enabled = true; goldMedal.enabled = false;
+        }
+        else if (medalTier == 3)
+        {
+            bronzeMedal.enabled = true; silverMedal.enabled = false; goldMedal.enabled = false;
+        }
     }
 
     IEnumerator HidePopupTextCoroutine(float waitTimeInSeconds)

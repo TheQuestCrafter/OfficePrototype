@@ -15,6 +15,9 @@ public class NPCScript : MonoBehaviour
     private string identifier;
 
     [SerializeField]
+    PopupText popupText;
+
+    [SerializeField]
     [Tooltip("A referene to the Quest system")]
     private GameObject MinigameDetector;
 
@@ -53,6 +56,7 @@ public class NPCScript : MonoBehaviour
     void Start()
     {
         speech.text = "";
+        ProximitySpeech = "";//removing prompts due to feedback
 
         if (minigameChart==null)
             MinigameDetector.SetActive(false);
@@ -103,30 +107,33 @@ public class NPCScript : MonoBehaviour
 
     void ReportScoreResults()
     {
+        if(!popupText)
+        {
+            Debug.Log("No popup text found!");
+            return;
+        }
+
         if (score < scoreOneStar)
         {
-            //zero stars
-            Debug.Log("Your score of " + score + " earned you no yogurt lid!");
+            popupText.DisplayPopupText("Score: " + score + "\nYou did not earn a medal.", 0, 5);
         }
         if (score >= scoreOneStar && score < scoreTwoStar)
         {
-            //one star
-            Debug.Log("Your score of " + score + " earned you the bronze yogurt lid!");
+            popupText.DisplayPopupText("Score: " + score + "\nYou earned the bronze medal!", 3, 5);
         }
         if (score >= scoreTwoStar && score < scoreThreeStar)
         {
-            //two stars
-            Debug.Log("Your score of " + score + " earned you the silver yogurt lid!");
+            popupText.DisplayPopupText("Score: " + score + "\nYou earned the silver medal!", 2, 5);
         }
         if (score >= scoreThreeStar)
         {
-            //three stars
-            Debug.Log("Your score of " + score + " earned you the gold yogurt lid!");
+            popupText.DisplayPopupText("Score: " + score + "\nYou earned the gold medal!", 1, 5);
         }
     }
 
     public void UpdateProxSpeech(string updatedLine)
     {
+        return;//removing prompts due to feedback
         ProximitySpeech = updatedLine;
     }
 
@@ -135,10 +142,10 @@ public class NPCScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerTouching = true;
-            speech.text = ProximitySpeech;
+            //speech.text = ProximitySpeech;
             if(readyToStartMinigame)
             {
-                speech.text = minigameProximityText;
+                //speech.text = minigameProximityText;
             }
         }
     }
