@@ -1,15 +1,18 @@
 fileFormatVersion: 2
-guid: aa9544c79ee426e4c986ce8b736185c5
+guid: 0ca49f1615407764db5a9a2592c51706
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WalkCycle_Intern_0
-    21300002: WalkCycle_Intern_1
-    21300004: WalkCycle_Intern_2
-    21300006: WalkCycle_Intern_3
-    21300008: WalkCycle_Intern_4
-    21300010: WalkCycle_Intern_5
-    21300012: WalkCycle_Intern_6
-    21300014: WalkCycle_Intern_7
+    21300000: Furniture_0
+    21300002: Furniture_1
+    21300004: Furniture_2
+    21300006: Furniture_3
+    21300008: Furniture_4
+    21300010: Furniture_5
+    21300012: Furniture_6
+    21300014: Furniture_7
+    21300016: Furniture_8
+    21300018: Furniture_9
+    21300020: Furniture_10
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -39,7 +42,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -71,7 +74,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -82,40 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -126,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,161 +106,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkCycle_Intern_0
+      name: Furniture_0
       rect:
         serializedVersion: 2
-        x: 51
-        y: 408
-        width: 63
-        height: 105
+        x: 20
+        y: 311
+        width: 112
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db17a845d4c16f54db7b31d28849f702
+      spriteID: 67d2ee90f2e0e6245a20971934d59fdc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_1
+      name: Furniture_1
       rect:
         serializedVersion: 2
-        x: 231
-        y: 408
-        width: 63
-        height: 105
+        x: 141
+        y: 372
+        width: 67
+        height: 35
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5bd69554ead9674883679be176a9604
+      spriteID: 9f77f83d9ca434d42963cde55c9e4c3b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_2
+      name: Furniture_2
       rect:
         serializedVersion: 2
-        x: 411
-        y: 408
-        width: 63
-        height: 105
+        x: 214
+        y: 369
+        width: 30
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e604caee9f96c4a809e4d97d5ac9e6
+      spriteID: 96f026d73cea69e48881dd704cbb68bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_3
+      name: Furniture_3
       rect:
         serializedVersion: 2
-        x: 51
-        y: 228
-        width: 63
-        height: 105
+        x: 245
+        y: 368
+        width: 29
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93980bbe5a130a545b6f66ae56e248c3
+      spriteID: c34d2829040c60d458ec098f001d82ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_4
+      name: Furniture_4
       rect:
         serializedVersion: 2
-        x: 231
-        y: 228
-        width: 63
-        height: 102
+        x: 143
+        y: 304
+        width: 52
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 688597e1bf527674a9388da5328d3b9e
+      spriteID: fbf185e2cb5adc64094734627766f0f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_5
+      name: Furniture_5
       rect:
         serializedVersion: 2
-        x: 411
-        y: 228
-        width: 63
-        height: 102
+        x: 198
+        y: 312
+        width: 52
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1d33f029b3d5644d9bd9c6bd0e82573
+      spriteID: 803244c6a0c9add4897ad563d979a7ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_6
+      name: Furniture_6
       rect:
         serializedVersion: 2
-        x: 51
-        y: 48
-        width: 63
-        height: 102
+        x: 5
+        y: 160
+        width: 46
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7228df9d9de881448885926df8fceb40
+      spriteID: af3dfe55a313e0a41b116563f7f9a467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkCycle_Intern_7
+      name: Furniture_7
       rect:
         serializedVersion: 2
-        x: 231
-        y: 48
-        width: 63
-        height: 102
+        x: 23
+        y: 259
+        width: 46
+        height: 52
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59f18d9c2eede0c42ae1a73f47052b76
+      spriteID: b1095492bf00b4148b47062e0d009956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furniture_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 230
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b285832d1ab499d4ebce84dcd43ff94d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furniture_9
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 10
+        width: 53
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0634568a195b942bd081b6649db5de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Furniture_10
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 69
+        width: 48
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6487ed38245e7fc498227ad02c2473e7
       vertices: []
       indices: 
       edges: []
@@ -298,7 +328,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0358b392f8d2d61438c625680d6267dc
+    spriteID: 95519a159203c334b81dc8adcfed2e3c
     vertices: []
     indices: 
     edges: []
