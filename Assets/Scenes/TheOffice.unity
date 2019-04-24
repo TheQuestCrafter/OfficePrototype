@@ -9109,12 +9109,12 @@ PrefabInstance:
     - target: {fileID: 3231822485706157529, guid: 1bd7797f6490dbe4ba4304118aeb6176,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1077.1691
+      value: -19.81
       objectReference: {fileID: 0}
     - target: {fileID: 3231822485706157529, guid: 1bd7797f6490dbe4ba4304118aeb6176,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 750.8322
+      value: 4.08
       objectReference: {fileID: 0}
     - target: {fileID: 3231822485706157529, guid: 1bd7797f6490dbe4ba4304118aeb6176,
         type: 3}
@@ -9184,7 +9184,7 @@ PrefabInstance:
     - target: {fileID: 3231822485706157530, guid: 1bd7797f6490dbe4ba4304118aeb6176,
         type: 3}
       propertyPath: orthographic size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3231822485706157532, guid: 1bd7797f6490dbe4ba4304118aeb6176,
         type: 3}
@@ -11233,6 +11233,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oscar
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419377139494, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: ProximitySpeech
@@ -13112,16 +13117,6 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: a85e8ced2c782ae4ba588c1707ebcc97, type: 2}
-    - target: {fileID: 2818186149401761768, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678599, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.44
-      objectReference: {fileID: 0}
     - target: {fileID: 8020941057428765361, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_IsActive
@@ -13131,6 +13126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818186149401761768, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678599, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
@@ -14123,6 +14128,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679182617184204717, guid: 53234af2b41945249a6750d198b09cfb,
+        type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679182616461336556, guid: 53234af2b41945249a6750d198b09cfb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
