@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1737697551279504235}
   m_Layer: 0
-  m_Name: Sofa
+  m_Name: Grey Sofa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
