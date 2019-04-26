@@ -69,6 +69,7 @@ public class FireBehavior : MonoBehaviour
     void EndFire()
     {
         fireSprite.GetComponent<Renderer>().material.color = Color.black;
+        fireSprite.GetComponent<Animator>().enabled = false;
         fireSpawningScript.UpdateFireTally(false);
         audioSource.PlayOneShot(fire_sizzle_out);
         fireIsFullSize = true;

@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class NPCScript : MonoBehaviour
 {
 
+    public AudioSource winSound;
+
     [SerializeField]
     private TextMesh speech;
     [SerializeField]
@@ -28,8 +30,14 @@ public class NPCScript : MonoBehaviour
     private Flowchart minigameChart;
 
     [SerializeField]
+    [Tooltip("The day during which their minigame is open for play. 0 = available every day")]
+    private int minigameDay = 0;
+
+    [SerializeField]
     [Tooltip("The name of the block that starts their minigame, such as DwightFireMinigameStart")]
     private string minigameBlockName;
+
+
 
     [Tooltip("When set to true, interacting with the NPC will start the minigame flowchart block")]
     public bool readyToStartMinigame = false;
@@ -49,12 +57,15 @@ public class NPCScript : MonoBehaviour
 
 
     public bool playerTouching = false;
+    DaySystem daySystem;
 
     //private Collider2D ProximityCheck = new Collider2D();
 
     // Start is called before the first frame update
     void Start()
     {
+        daySystem = GameObject.FindGameObjectWithTag("Player").GetComponent<DaySystem>();
+
         speech.text = "";
         ProximitySpeech = "";//removing prompts due to feedback
 
@@ -64,7 +75,7 @@ public class NPCScript : MonoBehaviour
 
     public void TalkToNPC()
     {
-        if(readyToStartMinigame)
+        if (readyToStartMinigame && (minigameDay == 0 || minigameDay == daySystem.currentDay))//if the NPC is ready to start the game and it's the correct day for the game
         {
 
             if (minigameChart)//make sure they actually have a flowchart assigned
@@ -102,7 +113,27 @@ public class NPCScript : MonoBehaviour
         {
             bestScore = score;
         }
-        ReportScoreResults();
+        PostMinigameChat();
+    }
+
+    void PostMinigameChat()//the correct block is found by using the NPC's name, make sure they're named correctly in the heirarchy and in the flowchart blocks!
+    {
+        if (score < scoreOneStar)
+        {
+            minigameChart.ExecuteBlock(name + "NoMedal");
+        }
+        if (score >= scoreOneStar && score < scoreTwoStar)
+        {
+            minigameChart.ExecuteBlock(name + "BronzeMedal");
+        }
+        if (score >= scoreTwoStar && score < scoreThreeStar)
+        {
+            minigameChart.ExecuteBlock(name + "SilverMedal");
+        }
+        if (score >= scoreThreeStar)
+        {
+            minigameChart.ExecuteBlock(name + "GoldMedal");
+        }
     }
 
     void ReportScoreResults()
@@ -116,7 +147,10 @@ public class NPCScript : MonoBehaviour
         if (score < scoreOneStar)
         {
             popupText.DisplayPopupText("Score: " + score + "\nYou did not earn a medal.", 0, 5);
+            return;
         }
+        daySystem.dayComplete = true;
+        winSound.Play();
         if (score >= scoreOneStar && score < scoreTwoStar)
         {
             popupText.DisplayPopupText("Score: " + score + "\nYou earned the bronze medal!", 3, 5);

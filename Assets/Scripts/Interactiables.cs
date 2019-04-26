@@ -11,10 +11,27 @@ public class Interactiables : MonoBehaviour
     private Flowchart ObjectDescriptionChart;
     [SerializeField]
     private string objectBlockName;
+    [SerializeField]
+    private bool isExitDoor = false;
+
+    private DaySystem daySystem;
+
+    private void Start()
+    {
+        daySystem = GameObject.FindGameObjectWithTag("Player").GetComponent<DaySystem>();
+    }
 
     public void giveprompt()
     {
-        //Calls the block from the object flowchart with the string title given through objectBlockName
-        ObjectDescriptionChart.ExecuteBlock(objectBlockName);
+        if(isExitDoor && daySystem.dayComplete == true)
+        {
+            ObjectDescriptionChart.ExecuteBlock("DoorReady");
+            daySystem.GoToNextDay();
+        }
+        else
+        {
+            //Calls the block from the object flowchart with the string title given through objectBlockName
+            ObjectDescriptionChart.ExecuteBlock(objectBlockName);
+        }
     }
 }
