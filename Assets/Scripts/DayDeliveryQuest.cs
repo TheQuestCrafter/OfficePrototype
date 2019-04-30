@@ -22,7 +22,7 @@ public class DayDeliveryQuest : QuestParent
     [SerializeField]
     private string prompt1;
 
-    //Fungus Variables
+    //Fungus Variables for Quest if NPC has quest
     [SerializeField]
     private Flowchart questFlowchart; //reference to this quest's Flowchart
     [SerializeField]

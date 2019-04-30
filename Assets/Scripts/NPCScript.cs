@@ -46,6 +46,12 @@ public class NPCScript : MonoBehaviour
     [Tooltip("What the NPC's proximity text will say if they're ready to start the minigame")]
     private string minigameProximityText = "";
 
+    //Fungus Variables for NPC random dialogue
+    [SerializeField]
+    private Flowchart barkFlowchart;
+    [SerializeField]
+    private string barkBlockName;
+
     private int score = 0;
     private int bestScore = 0;
     [SerializeField]
@@ -87,6 +93,10 @@ public class NPCScript : MonoBehaviour
                 Debug.Log(gameObject + " tried to start a minigame but had no flowchart assigned.");
             }
         }
+        /*else if(barkFlowchart != null)
+        {
+            barkFlowchart.ExecuteBlock(barkBlockName);
+        }*/
     }
 
     public void StartMinigame()
