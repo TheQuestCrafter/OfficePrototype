@@ -3010,6 +3010,8 @@ GameObject:
   - component: {fileID: 425092157}
   - component: {fileID: 425092160}
   - component: {fileID: 425092161}
+  - component: {fileID: 425092163}
+  - component: {fileID: 425092162}
   m_Layer: 0
   m_Name: TaskFlowchart
   m_TagString: Untagged
@@ -3041,10 +3043,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 425092158}
-  selectedCommands:
-  - {fileID: 425092159}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -5583,7 +5583,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &425092157
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5602,7 +5602,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &425092158
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5626,10 +5626,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 425092159}
+  - {fileID: 425092163}
+  - {fileID: 425092162}
   - {fileID: 425092157}
 --- !u!114 &425092159
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5643,8 +5645,8 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 
   description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
+  character: {fileID: 1450481735}
+  portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -5656,7 +5658,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &425092160
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5683,7 +5685,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &425092161
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -5700,6 +5702,60 @@ MonoBehaviour:
   description: 
   character: {fileID: 186890242}
   portrait: {fileID: 21300000, guid: c4cadf401e7c6694fa2c261b2eb8a756, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092162
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 142
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 1450481735}
+  portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092163
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 141
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 1450481735}
+  portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -17881,6 +17937,8 @@ PrefabInstance:
         Robert Sandoval
 
         Stephen Keogg
+
+        Scott Little
 
 
         Narrative Team
