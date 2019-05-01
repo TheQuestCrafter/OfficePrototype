@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LeisureGame.unity
     guid: ed1531df0e4a7b7438baba31d62f245a
+  - enabled: 1
+    path: Assets/Scenes/PingPong.unity
+    guid: f3d25df6868209e4482f3de28cf34d34
   m_configObjects: {}
