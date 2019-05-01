@@ -553,16 +553,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 3679182616461336557, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 3679182616461336558, guid: 53234af2b41945249a6750d198b09cfb,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 3679182617184204690, guid: 53234af2b41945249a6750d198b09cfb,
         type: 3}
       propertyPath: m_IsActive
@@ -582,6 +572,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BackGroundColor.b
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679182616461336557, guid: 53234af2b41945249a6750d198b09cfb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679182616461336558, guid: 53234af2b41945249a6750d198b09cfb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53234af2b41945249a6750d198b09cfb, type: 3}
@@ -983,7 +983,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 789ca03cb3bd85d429633faabe6dc8fb, type: 3}
+    m_Font: {fileID: 12800000, guid: be5b9eba7273e9243929b7851623454f, type: 3}
     m_FontSize: 170
     m_FontStyle: 0
     m_BestFit: 1
