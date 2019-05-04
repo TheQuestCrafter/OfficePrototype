@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class GlobalInformation : MonoBehaviour
 {
-    public int Shrutebucks;
+    //0 is worst, 1 is okay/good, 2 is great
+    public int chiliWin { get; set; }
+    public int jimWin { get; set; }
+    public int larryWin { get; set; }
+
     private bool GMActive;
     private GlobalInformation GM;
     void Start()
