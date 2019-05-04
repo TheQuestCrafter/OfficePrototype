@@ -3012,6 +3012,7 @@ GameObject:
   - component: {fileID: 425092161}
   - component: {fileID: 425092163}
   - component: {fileID: 425092162}
+  - component: {fileID: 425092164}
   m_Layer: 0
   m_Name: TaskFlowchart
   m_TagString: Untagged
@@ -3032,7 +3033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 368.35492, y: 50.420918}
+  scrollPos: {x: -64.4576, y: 119.17092}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -3043,8 +3044,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 425092158}
+  selectedCommands:
+  - {fileID: 425092164}
   variables: []
   description: 
   stepPause: 0
@@ -3100,7 +3103,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 3.5284348
     y: 59.91024
-    width: 206.25003
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3170,7 +3173,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -0.6557274
     y: 122.93445
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3345,7 +3348,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 288.2941
     y: 48
-    width: 207.50003
+    width: 187.50003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3378,7 +3381,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.82353
     y: 115
-    width: 176.25003
+    width: 157.81253
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3503,7 +3506,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 401
     y: 114.5
-    width: 178.75003
+    width: 159.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3625,7 +3628,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 317.44763
     y: 203.57481
-    width: 150.00003
+    width: 134.37502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4026,7 +4029,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 15.73459
     y: 182.5137
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4101,7 +4104,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1008.9092
     y: 460.75067
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4909,7 +4912,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1008.6449
     y: 396.40845
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4938,7 +4941,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1008.6449
     y: 322.72418
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4967,7 +4970,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1006.0138
     y: 254.30307
-    width: 206.25003
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4994,7 +4997,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 681.44324
     y: 332.0479
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5021,7 +5024,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 682.7595
     y: 263.6268
-    width: 206.25003
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5050,7 +5053,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1003.2384
     y: 114.777504
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5079,7 +5082,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1005.8701
     y: 45.040684
-    width: 198.75003
+    width: 175.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5107,7 +5110,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 674.2907
     y: 105.567
-    width: 212.50003
+    width: 184.37503
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5137,7 +5140,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 678.2386
     y: 46.356487
-    width: 206.25003
+    width: 181.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5193,7 +5196,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 189.29182
     y: -190.06343
-    width: 158.75003
+    width: 142.18753
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5282,7 +5285,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.01335
     y: -140.69632
-    width: 166.25003
+    width: 150.00003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5354,7 +5357,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.26653
     y: -90.063385
-    width: 172.50003
+    width: 156.25003
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5426,7 +5429,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 187.51971
     y: -44.493744
-    width: 147.50003
+    width: 132.81252
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5541,7 +5544,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 205.86407
     y: 263.17288
-    width: 153.75003
+    width: 139.06252
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5616,7 +5619,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 437.89526
     y: 262.07913
-    width: 143.75003
+    width: 128.12502
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5628,6 +5631,7 @@ MonoBehaviour:
   - {fileID: 425092159}
   - {fileID: 425092163}
   - {fileID: 425092162}
+  - {fileID: 425092164}
   - {fileID: 425092157}
 --- !u!114 &425092159
 MonoBehaviour:
@@ -5643,7 +5647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 137
   indentLevel: 0
-  storyText: 
+  storyText: "Hey, hey buddy! C\u2019mere, I need your help for a sec."
   description: 
   character: {fileID: 1450481735}
   portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
@@ -5725,7 +5729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 142
   indentLevel: 0
-  storyText: 
+  storyText: "You\u2019re gonna play ping pong with me so I can beat Darryl."
   description: 
   character: {fileID: 1450481735}
   portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
@@ -5752,7 +5756,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 141
   indentLevel: 0
-  storyText: 
+  storyText: Okay, I have a super important job for you. You ready?
+  description: 
+  character: {fileID: 1450481735}
+  portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &425092164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425092053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 143
+  indentLevel: 0
+  storyText: "It\u2019ll be great, c\u2019mon."
   description: 
   character: {fileID: 1450481735}
   portrait: {fileID: 21300000, guid: adfa2477a3c12f94d922ddfcc4895c51, type: 3}
@@ -10860,7 +10891,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dccddd030a90d1840bd09c2c97b360ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Shrutebucks: 0
 --- !u!4 &1140406570
 Transform:
   m_ObjectHideFlags: 0
@@ -11111,12 +11141,12 @@ PrefabInstance:
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 4.1
+      value: -8.91
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 7.6
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -12743,19 +12773,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 349.53192, y: 91.17842}
+  scrollPos: {x: 44.104225, y: 174.62743}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.85000014
+  zoom: 0.8800001
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1447827591}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -12784,7 +12813,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 365.953
     y: 43.085083
-    width: 126.235275
+    width: 123.63635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13047,7 +13076,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 204.45496
     y: 159.69711
-    width: 145.0588
+    width: 141.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13102,7 +13131,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 354.81116
     y: 138.49161
-    width: 142.23528
+    width: 139.0909
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13156,7 +13185,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.25897
     y: 117.42907
-    width: 129.0588
+    width: 126.363625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13210,7 +13239,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 210.00366
     y: 65.97364
-    width: 132.82352
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13265,7 +13294,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 211.05286
     y: 20.404
-    width: 134.70587
+    width: 131.81818
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13319,7 +13348,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 202.82379
     y: -27.69712
-    width: 152.58821
+    width: 149.0909
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13428,7 +13457,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 358.75476
     y: -6.282015
-    width: 144.11761
+    width: 140.90909
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -15939,7 +15968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2018532257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17707,6 +17736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenuCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3935631562213623956, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3935631562213623952, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17855,7 +17889,7 @@ PrefabInstance:
     - target: {fileID: 5941684958453839097, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -451.13666
+      value: -454.77002
       objectReference: {fileID: 0}
     - target: {fileID: 5941684958936331619, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
         type: 3}
@@ -17875,7 +17909,12 @@ PrefabInstance:
     - target: {fileID: 5941684958936331619, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -799.8433
+      value: -801.66003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941684958936331619, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 126
       objectReference: {fileID: 0}
     - target: {fileID: 5941684957951238470, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
         type: 3}
@@ -17956,6 +17995,229 @@ PrefabInstance:
 
         Jonathan Way'
       objectReference: {fileID: 0}
+    - target: {fileID: 3935631561981426615, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561193402655, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562958059174, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562958059174, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562958059174, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562958059174, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561756789687, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561756789687, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561756789687, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561756789687, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -269.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562138826251, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562138826251, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562138826251, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562138826251, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -407.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561375230415, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561375230415, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561375230415, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561375230415, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -542.30005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995093584594639057, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995093584594639057, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995093584594639057, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995093584594639057, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -677.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562534784842, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562534784842, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562534784842, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562534784842, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -812.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562534784842, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561756789685, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 5941684958649171839, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 3935631561288527731, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631561288527731, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 3935631562433422849, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 3935631562433422849, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562660842705, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 3935631562660842705, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562745527313, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 3935631562745527313, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935631562745527313, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941684958132277517, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941684958132277517, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5941684958132277517, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
+    - target: {fileID: 7392500622653740314, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7392500622653740314, guid: 0eacb0f1a67c9564f8a72f36dff547d4,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 61ca40f7e2372cd42bb7c11e9685bf71,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eacb0f1a67c9564f8a72f36dff547d4, type: 3}
 --- !u!1001 &6327170650566843379
