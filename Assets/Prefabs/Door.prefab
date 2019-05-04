@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 4152324690557254082}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30.758324, y: -7.249069, z: 0}
-  m_LocalScale: {x: 1.2907536, y: 1.181895, z: 1.2441}
+  m_LocalScale: {x: 0.99999994, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -121,9 +121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: 0
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 32768
 --- !u!70 &4152324690557254083
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
