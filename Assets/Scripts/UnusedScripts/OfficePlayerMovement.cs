@@ -55,6 +55,7 @@ public class OfficePlayerMovement : MonoBehaviour
     {
         StuffToSayThisFrame = "";
         rb.velocity = new Vector2(horizontal * moveSpeed, vertical * moveSpeed);
+        text.text = "Schrutebucks: " + GM.Shrutebucks;
         AvaliableQuest();
         speech.text = StuffToSayThisFrame+QuestText+InteractableText;
         TimerTick();
