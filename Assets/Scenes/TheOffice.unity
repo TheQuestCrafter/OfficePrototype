@@ -2616,13 +2616,6 @@ GameObject:
   - component: {fileID: 425092139}
   - component: {fileID: 425092155}
   - component: {fileID: 425092158}
-<<<<<<< HEAD
-=======
-  - component: {fileID: 425092159}
-  - component: {fileID: 425092157}
-  - component: {fileID: 425092160}
-  - component: {fileID: 425092161}
->>>>>>> parent of 7a92e1f... Merge branch 'gameplay-mechanics' of https://github.com/TheQuestCrafter/OfficePrototype into gameplay-mechanics
   m_Layer: 0
   m_Name: TaskFlowchart
   m_TagString: Untagged
@@ -2650,23 +2643,12 @@ MonoBehaviour:
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
     y: 0
     width: 0
     height: 0
   selectedBlocks: []
   selectedCommands: []
-=======
-    x: -343
-    y: -340
-    width: 1114
-    height: 859
-  selectedBlocks:
-  - {fileID: 425092158}
-  selectedCommands:
-  - {fileID: 425092159}
->>>>>>> parent of 7a92e1f... Merge branch 'gameplay-mechanics' of https://github.com/TheQuestCrafter/OfficePrototype into gameplay-mechanics
   variables: []
   description: 
   stepPause: 0
@@ -3094,7 +3076,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &425092137
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3119,7 +3101,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &425092139
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3141,17 +3123,10 @@ MonoBehaviour:
   blockName: New Block
   description: 
   eventHandler: {fileID: 0}
-<<<<<<< HEAD
   commandList: []
 --- !u!114 &425092143
-=======
-  commandList:
-  - {fileID: 425092159}
-  - {fileID: 425092157}
---- !u!114 &425092159
->>>>>>> parent of 7a92e1f... Merge branch 'gameplay-mechanics' of https://github.com/TheQuestCrafter/OfficePrototype into gameplay-mechanics
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3172,26 +3147,11 @@ MonoBehaviour:
   itemId: 19
   blockName: New Block
   description: 
-<<<<<<< HEAD
   eventHandler: {fileID: 0}
   commandList: []
 --- !u!114 &425092146
-=======
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &425092160
->>>>>>> parent of 7a92e1f... Merge branch 'gameplay-mechanics' of https://github.com/TheQuestCrafter/OfficePrototype into gameplay-mechanics
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3216,7 +3176,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &425092149
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3237,7 +3197,6 @@ MonoBehaviour:
   itemId: 17
   blockName: New Block
   description: 
-<<<<<<< HEAD
   eventHandler: {fileID: 0}
   commandList: []
 --- !u!114 &425092155
@@ -3290,19 +3249,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList: []
-=======
-  character: {fileID: 186890242}
-  portrait: {fileID: 21300000, guid: c4cadf401e7c6694fa2c261b2eb8a756, type: 3}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
->>>>>>> parent of 7a92e1f... Merge branch 'gameplay-mechanics' of https://github.com/TheQuestCrafter/OfficePrototype into gameplay-mechanics
 --- !u!1 &425780631
 GameObject:
   m_ObjectHideFlags: 0
@@ -14929,6 +14875,8 @@ PrefabInstance:
         Robert Sandoval
 
         Stephen Keogg
+
+        Scott Little
 
 
         Narrative Team
