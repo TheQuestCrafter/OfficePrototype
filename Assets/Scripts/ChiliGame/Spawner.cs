@@ -23,6 +23,8 @@ public class Spawner : MonoBehaviour
     PlayerScriptChiliGame player = new PlayerScriptChiliGame();
     [SerializeField]
     private int minWinAmount = 8;
+    [SerializeField]
+    private int maxWinAmount = 12;
 
     private GlobalInformation GM = new GlobalInformation();
     private System.Random random;
@@ -52,15 +54,20 @@ public class Spawner : MonoBehaviour
         if (Time.time >= totalTime && !EndGameStarted)
         {
             CancelInvoke();
-            if (player.count >= minWinAmount)
+            if (player.count >= minWinAmount && player.count <maxWinAmount)
             {
                 EndGameState = "You saved the Chili!";
-                GM.Shrutebucks += 5;
+                GM.chiliWin = 1;
+            }
+            else if(player.count >= maxWinAmount)
+            {
+                EndGameState = "Perfect Chili!";
+                GM.chiliWin = 2;
             }
             else
             {
                 EndGameState = "You dropped the Chili!";
-                GM.Shrutebucks += 1;
+                GM.chiliWin = 0;
             }
             text.text = EndGameState;
             EndGameStarted = true;

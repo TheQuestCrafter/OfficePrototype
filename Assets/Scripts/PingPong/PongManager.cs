@@ -16,6 +16,7 @@ public class PongManager : MonoBehaviour
     private GameObject ballObj;
     private GameObject cloneBall;
     private Paddle paddle;
+    private GlobalInformation globalInformation;
 
     public int score = 0;
     public int winScore;
@@ -29,6 +30,7 @@ public class PongManager : MonoBehaviour
     private Text failText;
     [SerializeField]
     private Text winText;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,7 @@ public class PongManager : MonoBehaviour
         StartCoroutine(WaitToStart());
         failText.enabled = false;
         winText.enabled = false;
+        globalInformation = FindObjectOfType<GlobalInformation>();
     }
 
     // Update is called once per frame
@@ -63,9 +66,11 @@ public class PongManager : MonoBehaviour
             winText.enabled = true;
             Destroy(cloneBall, 0f);
             StartCoroutine(LeaveScene());
+            globalInformation.jimWin = 2;
         }
         if(lives <= 0)
         {
+            globalInformation.jimWin = 0;
             failText.enabled = true;
             Destroy(cloneBall, 0f);
             StartCoroutine(LeaveScene());
@@ -79,7 +84,7 @@ public class PongManager : MonoBehaviour
     }
 
     IEnumerator LeaveScene()
-    {        
+    {
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("TheOffice");
     }
