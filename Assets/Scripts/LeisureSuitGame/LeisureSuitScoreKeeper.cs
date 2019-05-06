@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>
@@ -8,6 +9,8 @@ using UnityEngine.UI;
 /// </summary>
 public class LeisureSuitScoreKeeper : MonoBehaviour
 {
+    //Variable for the GameMaster's GlobalInformation script;
+    private GlobalInformation GameMasterBrain;
     private Text scoreText, timerText;
     private GameObject winCanvas, loseCanvas;
     //3 strikes (hits) and the player's out
@@ -64,11 +67,21 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        InitializeLeisureGame();
+
+        //TODO: Debug LiesureSuitScoreKeeper
+        Debug.Log($"The current value of LeisureSuitEndState is: {LeisureSuitGameEndState}");
+    }
+
+    private void InitializeLeisureGame()
+    {
         //Set the Win and Lose state canvas objects to inactive
         winCanvas = GameObject.Find("WinState_Panel");
         winCanvas.SetActive(false);
         loseCanvas = GameObject.Find("LoseState_Panel");
         loseCanvas.SetActive(false);
+
+        GameMasterBrain = GameObject.Find("TheGameMaster").GetComponent<GlobalInformation>();
 
         scoreText = GetComponent<Text>();
         timerText = GameObject.Find("MiniGameTimerText").GetComponent<Text>();
@@ -76,15 +89,15 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
         currentHealth = startingHealth;
         currentTime = minigameTimer;
         UpdateScore();
-
-        //TODO: Debug LiesureSuitScoreKeeper
-        Debug.Log($"The current value of LeisureSuitEndState is: {LeisureSuitGameEndState}");
     }
 
     private void Update()
     {
-        CheckLeisureSuitMinigameTimer();
-        CheckCurrentPlayerHealth();
+        if (!LeisureSuitGameEndState)
+        {
+            CheckLeisureSuitMinigameTimer();
+            CheckCurrentPlayerHealth();
+        }
 
         //TODO: Debug.Log to display the player's current health
         Debug.Log($"The Player's current health is: {startingHealth}");
@@ -162,4 +175,37 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
         scoreCounter++;
         UpdateScore();
     }
+
+    #region End State Button Handler
+    public void RetryLeisureSuitGame()
+    {
+        //Reload the Current scene
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void ExitToOffice()
+    {
+        //TODO: Debug.Log ExitGame Click
+        Debug.Log("Exit Button Clicked!");
+
+        if (scoreCounter < minimumScoreToWin || loseCanvas.activeSelf == true)
+        {
+            //Player HAS NOT met the minimum requirements to win
+            GameMasterBrain.larryWin = 0;
+        }
+        else if (scoreCounter >= minimumScoreToWin && scoreCounter < highestPossibleScore)
+        {
+            //Player HAS met the minimum requirements to win, but HAS NOT achieved the highest possible score
+            GameMasterBrain.larryWin = 1;
+        }
+        else if (scoreCounter >= highestPossibleScore)
+        {
+            //Player HAS reached the maximum score obtainable and triggered an auto-win state
+            GameMasterBrain.larryWin = 2;
+        }
+
+        //TODO: Debug.Log ExitGame State
+        Debug.Log($"GameMasterBrain.larryWin == {GameMasterBrain.larryWin}");
+    }
+    #endregion
 }
