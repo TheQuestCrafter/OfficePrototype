@@ -12,8 +12,12 @@ public class ObjectSpawner : MonoBehaviour
 {
     #region Serialized Fields
     [SerializeField]
-    [Tooltip("The Obstacle Prefab to be Spawned in.")]
-    private GameObject obstaclePrefab;
+    [Tooltip("The first potential obstacle that can be spawned in.")]
+    private GameObject firstObstaclePrefab;
+
+    [SerializeField]
+    [Tooltip("The second potential obstacle that can be spawned in.")]
+    private GameObject secondObstaclePrefab;
 
     [SerializeField]
     [Tooltip("The Pickup Prefab to be Spawned in.")]
@@ -132,8 +136,25 @@ public class ObjectSpawner : MonoBehaviour
     /// </summary>
     private void SpawnObstacles(int spawnPoint)
     {
-        GameObject clone = Instantiate(obstaclePrefab, spawnPoints[spawnPoint].position, Quaternion.identity);
+        GameObject clone = Instantiate(ObstacleRandomizer(), spawnPoints[spawnPoint].position, Quaternion.identity);
         Destroy(clone, lifetime);
+    }
+
+    /// <summary>
+    /// Used to Randomize which obstacle will be spawned between the obstacle prefabs that have been assigned in-editor
+    /// </summary>
+    /// <returns>The obstacle that will be spawned</returns>
+    private GameObject ObstacleRandomizer()
+    {
+        GameObject obstacleToBeSpawned;
+        int objectPicker = Random.Range(0, 100);
+
+        if (objectPicker <= 50)
+            obstacleToBeSpawned = firstObstaclePrefab;
+        else
+            obstacleToBeSpawned = secondObstaclePrefab;
+
+        return obstacleToBeSpawned;
     }
 
     /// <summary>

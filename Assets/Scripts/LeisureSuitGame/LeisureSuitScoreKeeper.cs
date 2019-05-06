@@ -11,13 +11,14 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
 {
     //Variable for the GameMaster's GlobalInformation script;
     private GlobalInformation GameMasterBrain;
-    private Text scoreText, timerText;
+    private Text scoreText, timerText, lifeText;
     private GameObject winCanvas, loseCanvas;
     //3 strikes (hits) and the player's out
     private int startingHealth = 3, currentHealth;
     private int scoreCounter;
     private float currentTime = 0f;
     private bool hasTimeLeft, isAlive;
+    private Animator playerAnimator;
 
     [SerializeField]
     [Tooltip("The scene to change to.")]
@@ -87,12 +88,24 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
 
         GameMasterBrain = GameObject.Find("TheGameMaster").GetComponent<GlobalInformation>();
 
+        playerAnimator = GameObject.Find("CreedHead(Player)").GetComponent<Animator>();
+        playerAnimator.SetBool("IsDead", (currentHealth <= 0));
         scoreText = GetComponent<Text>();
         timerText = GameObject.Find("MiniGameTimerText").GetComponent<Text>();
+        lifeText = GameObject.Find("LifeText").GetComponent<Text>();
         scoreCounter = 0;
         currentHealth = startingHealth;
         currentTime = minigameTimer;
+        UpdateHealthText();
         UpdateScore();
+    }
+
+    private void UpdateHealthText()
+    {
+        if (!LeisureSuitGameEndState)
+        {
+            lifeText.text = $"Hits Left: {currentHealth}";
+        }
     }
 
     private void Update()
@@ -102,6 +115,8 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
             CheckLeisureSuitMinigameTimer();
             CheckCurrentPlayerHealth();
         }
+
+        playerAnimator.SetBool("IsDead", (currentHealth <= 0));
 
         //TODO: Debug.Log to display the player's current health
         Debug.Log($"The Player's current health is: {startingHealth}");
@@ -172,6 +187,7 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
         scoreCounter--;
         currentHealth--;
         UpdateScore();
+        UpdateHealthText();
     }
 
     public void IncreaseScore()
