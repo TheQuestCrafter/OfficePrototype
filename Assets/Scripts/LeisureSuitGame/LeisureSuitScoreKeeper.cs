@@ -59,9 +59,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
             //Check all possible conditions that can que a win & loss state
             if (winCanvas.activeSelf == false && loseCanvas.activeSelf == false)
             {
-                //TODO: Debug LiesureSuitScoreKeeper
-                Debug.Log($"The current value of LeisureSuitEndState is: {leisureSuitGameEndState}");
-
                 return leisureSuitGameEndState = false;
             }
             else
@@ -73,9 +70,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
     private void Start()
     {
         InitializeLeisureGame();
-
-        //TODO: Debug LiesureSuitScoreKeeper
-        Debug.Log($"The current value of LeisureSuitEndState is: {LeisureSuitGameEndState}");
     }
 
     private void InitializeLeisureGame()
@@ -117,12 +111,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
         }
 
         playerAnimator.SetBool("IsDead", (currentHealth <= 0));
-
-        //TODO: Debug.Log to display the player's current health
-        Debug.Log($"The Player's current health is: {startingHealth}");
-        Debug.Log($"The IsAlive bool is: {IsAlive}");
-        Debug.Log($"The HasTimeLeft bool is: {HasTimeLeft}");
-        Debug.Log($"The current value of LeisureSuitEndState is: {LeisureSuitGameEndState}");
     }
 
     private void CheckCurrentPlayerHealth()
@@ -131,7 +119,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
 
         if (!isAlive)
         {
-            //TODO: Add the UI text update code here...
             currentHealth = 0;
 
             if (scoreCounter >= minimumScoreToWin)
@@ -176,7 +163,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
         }
         else if (scoreCounter >= highestPossibleScore)
         {
-            //TODO: StopCoroutine(MiniGameTimer());
             scoreText.text = $"Score: {scoreCounter}";
             winCanvas.SetActive(true);
         }
@@ -205,9 +191,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
 
     public void ExitToOffice()
     {
-        //TODO: Debug.Log ExitGame Click
-        Debug.Log("Exit Button Clicked!");
-
         if (scoreCounter < minimumScoreToWin || loseCanvas.activeSelf == true)
         {
             //Player HAS NOT met the minimum requirements to win
@@ -224,8 +207,6 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
             GameMasterBrain.larryWin = 2;
         }
         SceneManager.LoadScene(sceneNum);
-        //TODO: Debug.Log ExitGame State
-        Debug.Log($"GameMasterBrain.larryWin == {GameMasterBrain.larryWin}");
     }
     #endregion
 }
