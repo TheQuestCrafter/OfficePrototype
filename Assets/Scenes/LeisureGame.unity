@@ -549,6 +549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89d665a1159741140a27567a4a7f3905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneNum: 3
   minimumScoreToWin: 3
   highestPossibleScore: 8
   minigameTimer: 20

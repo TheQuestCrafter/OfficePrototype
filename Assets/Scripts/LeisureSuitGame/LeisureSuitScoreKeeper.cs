@@ -20,6 +20,10 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
     private bool hasTimeLeft, isAlive;
 
     [SerializeField]
+    [Tooltip("The scene to change to.")]
+    private int sceneNum;
+
+    [SerializeField]
     [Tooltip("The minimum score required to win.")]
     private int minimumScoreToWin;
 
@@ -203,7 +207,7 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
             //Player HAS reached the maximum score obtainable and triggered an auto-win state
             GameMasterBrain.larryWin = 2;
         }
-
+        SceneManager.LoadScene(sceneNum);
         //TODO: Debug.Log ExitGame State
         Debug.Log($"GameMasterBrain.larryWin == {GameMasterBrain.larryWin}");
     }
