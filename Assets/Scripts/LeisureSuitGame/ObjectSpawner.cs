@@ -2,16 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Directions: This Script is meant to be attached to the object that will act as the container for
+/// the 3 potential object spawning locations.
+///     Purpose: This will pick which spawn point to spawn a new object at and whether it will be an
+/// object the player will need to pickup(PickupPrefab) or an obstacle to be avoided(ObstaclePrefab).
+/// </summary>
 public class ObjectSpawner : MonoBehaviour
 {
-    /*SCRIPT DESCRIPTION:
-     * Directions: This Script is meant to be attached to the object that will act as the container for
-     * the 3 potential object spawning locations.
-     * 
-     * Purpose: This will pick which spawn point to spawn a new object at and whether it will be an
-     * object the player will need to pickup (PickupPrefab) or an obstacle to be avoided (ObstaclePrefab)
-     */
-
     #region Serialized Fields
     [SerializeField]
     [Tooltip("The Obstacle Prefab to be Spawned in.")]
@@ -39,6 +37,7 @@ public class ObjectSpawner : MonoBehaviour
     private Transform[] spawnPoints;
     private bool canSpawn = true;
     private bool canSpawnPickups = true;
+    private LeisureSuitScoreKeeper scoreKeeper;
 
     #region IEnumerators
     IEnumerator SpawnTimer()
@@ -60,13 +59,17 @@ public class ObjectSpawner : MonoBehaviour
     private void Start()
     {
         spawnPoints = GetComponentsInChildren<Transform>();
+        scoreKeeper = GameObject.Find("ScoreText").GetComponent<LeisureSuitScoreKeeper>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if(canSpawn)
-            SpawnPointPicker();
+        if (scoreKeeper.LeisureSuitGameEndState == false)
+        {
+            if(canSpawn)
+                SpawnPointPicker();
+        }
     }
 
 
