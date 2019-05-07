@@ -16,6 +16,9 @@ public class NPCScript : MonoBehaviour
     [SerializeField]
     private string identifier;
 
+    private GlobalInformation GameMasterBrain;
+    private GameObject player;
+
     [SerializeField]
     PopupText popupText;
 
@@ -70,6 +73,8 @@ public class NPCScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        GameMasterBrain = GameObject.Find("TheGameMaster").GetComponent<GlobalInformation>();
         daySystem = GameObject.FindGameObjectWithTag("Player").GetComponent<DaySystem>();
 
         speech.text = "";
@@ -81,11 +86,14 @@ public class NPCScript : MonoBehaviour
 
     public void TalkToNPC()
     {
+        Debug.Log("A");
         if (readyToStartMinigame && (minigameDay == 0 || minigameDay == daySystem.currentDay))//if the NPC is ready to start the game and it's the correct day for the game
         {
+            Debug.Log("B");
 
             if (minigameChart)//make sure they actually have a flowchart assigned
             {
+                GameMasterBrain.playerPos = player.transform.position;
                 minigameChart.ExecuteBlock(minigameBlockName);
             }
             else
@@ -160,7 +168,7 @@ public class NPCScript : MonoBehaviour
             return;
         }
         daySystem.dayComplete = true;
-        winSound.Play();
+        //winSound.Play();
         if (score >= scoreOneStar && score < scoreTwoStar)
         {
             popupText.DisplayPopupText("Score: " + score + "\nYou earned the bronze medal!", 3, 5);

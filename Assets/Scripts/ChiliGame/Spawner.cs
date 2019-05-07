@@ -75,6 +75,7 @@ public class Spawner : MonoBehaviour
         else if (Time.time >= totalTime + 3)
         {
             EndGameStarted = false;
+            GM.cameBackFromChiliMinigame = true;
             //Loads back to the office.
             SceneManager.LoadScene("TheOffice");
         }

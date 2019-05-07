@@ -37,6 +37,11 @@ public class OfficePlayerGeneral : MonoBehaviour
     [Tooltip("What the player considers a repeatable minigame")]
     private ContactFilter2D MinigameContactFilter;
 
+    [SerializeField]
+    PopupText popupText;
+
+    private GlobalInformation GameMasterBrain;
+
     private bool FreezePlayer;
     private Rigidbody2D MyRigidBody2D;
     private Animator playerAnim;
@@ -58,6 +63,53 @@ public class OfficePlayerGeneral : MonoBehaviour
         GM = (GlobalInformation)FindObjectOfType(typeof(GlobalInformation));
         MyRigidBody2D = this.GetComponent<Rigidbody2D>();
         playerAnim = this.transform.GetChild(0).GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        GameMasterBrain = GameObject.Find("TheGameMaster").GetComponent<GlobalInformation>();
+        HandOutMinigameRewards();
+    }
+
+    void HandOutMinigameRewards()
+    {
+        //when the scene reloads, if there's a saved position, return to it
+        if (GameMasterBrain.playerPos != null && GameMasterBrain.playerPos != Vector3.zero)//if they have a saved position (that isn't null or zero), put the player back in that spot
+        {
+            gameObject.transform.position = GameMasterBrain.playerPos;
+        }
+        if (GameMasterBrain.cameBackFromChiliMinigame == true)//if they just came back from the chili game, check their score and hand out the reward
+        {
+            GameMasterBrain.cameBackFromChiliMinigame = false;
+            if (GameMasterBrain.chiliWin == 0)
+            {
+                popupText.DisplayPopupText("\nYou earned the bronze medal!", 3, 5);
+            }
+            if (GameMasterBrain.chiliWin == 1)
+            {
+                popupText.DisplayPopupText("\nYou earned the silver medal!", 2, 5);
+            }
+            if (GameMasterBrain.chiliWin == 2)
+            {
+                popupText.DisplayPopupText("\nYou earned the gold medal!", 1, 5);
+            }
+        }
+        if (GameMasterBrain.cameBackFromCreedMinigame == true)
+        {
+            GameMasterBrain.cameBackFromCreedMinigame = false;
+            if (GameMasterBrain.larryWin == 0)
+            {
+                popupText.DisplayPopupText("\nYou earned the bronze medal!", 3, 5);
+            }
+            if (GameMasterBrain.larryWin == 1)
+            {
+                popupText.DisplayPopupText("\nYou earned the silver medal!", 2, 5);
+            }
+            if (GameMasterBrain.larryWin == 2)
+            {
+                popupText.DisplayPopupText("\nYou earned the gold medal!", 1, 5);
+            }
+        }
     }
 
     void Update()

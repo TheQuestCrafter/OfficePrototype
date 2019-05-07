@@ -191,6 +191,7 @@ public class LeisureSuitScoreKeeper : MonoBehaviour
 
     public void ExitToOffice()
     {
+        GameMasterBrain.cameBackFromCreedMinigame = true;
         if (scoreCounter < minimumScoreToWin || loseCanvas.activeSelf == true)
         {
             //Player HAS NOT met the minimum requirements to win

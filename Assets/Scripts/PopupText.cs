@@ -10,9 +10,10 @@ public class PopupText : MonoBehaviour
     public Image bronzeMedal;
     public Image silverMedal;
     public Image goldMedal;
+    public AudioSource winSound;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         gameObject.SetActive(false);//hide the popup when the game starts
     }
@@ -29,14 +30,17 @@ public class PopupText : MonoBehaviour
         }
         else if(medalTier == 1)
         {
+            winSound.Play();
             bronzeMedal.enabled = false; silverMedal.enabled = false; goldMedal.enabled = true;
         }
         else if (medalTier == 2)
         {
+            winSound.Play();
             bronzeMedal.enabled = false; silverMedal.enabled = true; goldMedal.enabled = false;
         }
         else if (medalTier == 3)
         {
+            winSound.Play();
             bronzeMedal.enabled = true; silverMedal.enabled = false; goldMedal.enabled = false;
         }
     }

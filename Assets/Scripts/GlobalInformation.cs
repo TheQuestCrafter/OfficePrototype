@@ -8,6 +8,9 @@ public class GlobalInformation : MonoBehaviour
     public int chiliWin { get; set; }
     public int jimWin { get; set; }
     public int larryWin { get; set; }
+    public Vector3 playerPos { get; set; }
+    public bool cameBackFromChiliMinigame { get; set; }
+    public bool cameBackFromCreedMinigame { get; set; }
 
     private bool GMActive;
     private GlobalInformation GM;
