@@ -7,6 +7,11 @@ TextureImporter:
     21300004: Oscar_2
     21300006: Oscar_3
     21300008: Oscar_4
+    21300010: Oscar_Idle_0
+    21300012: Oscar_Idle_1
+    21300014: Oscar_Idle_2
+    21300016: Oscar_Idle_3
+    21300018: Oscar_Idle_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -50,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Oscar_0
+      name: Oscar_Idle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 360
-        width: 180
-        height: 180
+        y: 120
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,19 +119,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05efc2f438d339444a70bd9acb5b85ed
+      spriteID: 697f521db3941ac40a4b2390691c410b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Oscar_1
+      name: Oscar_Idle_1
       rect:
         serializedVersion: 2
-        x: 180
-        y: 360
-        width: 180
-        height: 180
+        x: 60
+        y: 120
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1d23d51a832fbe4b95c9f8120ce97cc
+      spriteID: 73390c24e02ae0d47b2f5ddd5570b78d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Oscar_2
+      name: Oscar_Idle_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 180
-        width: 180
-        height: 180
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 892c3d19b29bd1445b91b80af2afa39d
+      spriteID: 2ac7fa20aad09374c8f39fdd96f6ed21
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Oscar_3
+      name: Oscar_Idle_3
       rect:
         serializedVersion: 2
-        x: 180
-        y: 180
-        width: 180
-        height: 180
+        x: 60
+        y: 60
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e4e4bdf8c46e704d88cca5fadb5b0c0
+      spriteID: a354d116ea4c2114a9233f29f0602fa4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Oscar_4
+      name: Oscar_Idle_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 180
-        height: 180
+        width: 60
+        height: 60
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,7 +199,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cdaca6da66c0b941886a967b5b6556a
+      spriteID: d168dd0d3554471488c31ee5b6469600
       vertices: []
       indices: 
       edges: []
