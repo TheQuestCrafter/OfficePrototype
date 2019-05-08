@@ -1641,16 +1641,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Pam
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.53
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -1677,6 +1667,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 81f22a5127c9e3e409efd09919a7f219, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Pam
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.53
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -2590,16 +2590,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Michael
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.57
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -2626,6 +2616,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: b8d058168c181584a9948732de55fc30, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Michael
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.57
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -4236,11 +4236,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Kevin
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -4272,6 +4267,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: f33a6833fed669f4d8352e3ef778c3c4, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Kevin
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animations.Array.size
@@ -5184,13 +5184,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: 'Creed
-
-'
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -5222,6 +5215,13 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a47ccf472c0b9254fb17cb007c6947d1, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Creed
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -5430,26 +5430,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Stanley
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_OffsetZ
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Anchor
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Alignment
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -5481,6 +5461,26 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 3e8e61a28c9861647a2140ab1957e03b, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Stanley
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_OffsetZ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Anchor
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Alignment
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -6504,11 +6504,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Toby
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -6540,6 +6535,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 74540d147ecaac441a6373ba429cd44a, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Toby
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -7183,11 +7183,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Angela
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -7213,6 +7208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Angela
       objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -8177,11 +8177,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Kelly
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -8213,6 +8208,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 956373c6f4e3e1049bcec9456b168a8a, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Kelly
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -9615,11 +9615,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Oscar
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -9661,6 +9656,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6909e2c6f1787844581b5f272d1c56a8, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Oscar
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -12179,16 +12179,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Dwight
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -12220,6 +12210,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: aaee8861791366140b14974aba3af6d2, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Dwight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -13659,16 +13659,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Text
-      value: Jim
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.55
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Color.r
@@ -13700,6 +13690,16 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6d048c63cdb8c4a4793315fa6f63edee, type: 2}
+    - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Text
+      value: Jim
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419892720608, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.55
+      objectReference: {fileID: 0}
     - target: {fileID: 6880583679195536880, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Animation
@@ -15830,11 +15830,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Michael's desk with props
       objectReference: {fileID: 0}
-    - target: {fileID: 1279006753186430517, guid: 60b1a303ba1da6f41850b04da79fdb51,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8693704724870403430, guid: 60b1a303ba1da6f41850b04da79fdb51,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15889,21 +15884,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693704724870403430, guid: 60b1a303ba1da6f41850b04da79fdb51,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.36529842
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693704724870403430, guid: 60b1a303ba1da6f41850b04da79fdb51,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.36529842
-      objectReference: {fileID: 0}
-    - target: {fileID: 8693704724870403430, guid: 60b1a303ba1da6f41850b04da79fdb51,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.36529842
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60b1a303ba1da6f41850b04da79fdb51, type: 3}
