@@ -2182,6 +2182,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.13112205
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.6886667
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fc7a44c3f9c04c83c00decb219ff6, type: 3}
 --- !u!4 &217341547 stripped
@@ -2530,6 +2540,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.27295706
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.13168973
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.68980193
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fc7a44c3f9c04c83c00decb219ff6, type: 3}
@@ -4018,21 +4038,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pam
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hey, welcome to the office!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4137,6 +4142,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hey, welcome to the office!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -5937,31 +5957,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Michael
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hey, have you seen Ryan recently?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: StartDeliveryQuest1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6066,6 +6061,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hey, have you seen Ryan recently?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: StartDeliveryQuest1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -10516,41 +10536,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kevin
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Need general proximity speech
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: KevinChiliGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigame
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameProximityText
-      value: Oh no! Gotta catch the chili!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10655,6 +10640,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Need general proximity speech
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: KevinChiliGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameProximityText
+      value: Oh no! Gotta catch the chili!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -12224,46 +12244,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kevin for Minigame
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Need general proximity speech
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: KevinChiliGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameProximityText
-      value: Oh no! Gotta catch the chili!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: MinigameDetector
-      value: 
-      objectReference: {fileID: 1615550839}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12369,6 +12349,46 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Need general proximity speech
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: KevinChiliGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigame
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameProximityText
+      value: Oh no! Gotta catch the chili!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: MinigameDetector
+      value: 
+      objectReference: {fileID: 1615550839}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -13426,11 +13446,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Creed
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hang in there, kid.
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13535,6 +13550,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hang in there, kid.
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -13837,21 +13857,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stanley
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: '...'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13956,6 +13961,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -15856,6 +15876,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1316898
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.6898023
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fc7a44c3f9c04c83c00decb219ff6, type: 3}
 --- !u!4 &936866896 stripped
@@ -15875,26 +15905,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toby
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Have you finished filling out those internship forms?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -16000,6 +16010,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Have you finished filling out those internship forms?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -16592,6 +16622,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.31501973
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798560528356987126, guid: 711e3c7301f28a8469cb34009be581a1,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10574108
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798560528356987126, guid: 711e3c7301f28a8469cb34009be581a1,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.29415798
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 711e3c7301f28a8469cb34009be581a1, type: 3}
@@ -17333,6 +17373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.27295706
+      objectReference: {fileID: 0}
+    - target: {fileID: 101128988472920862, guid: 44938bbbc2d5c3240aa980e402843e37,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44938bbbc2d5c3240aa980e402843e37, type: 3}
@@ -18107,21 +18152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angela
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: What?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18226,6 +18256,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: What?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -19346,6 +19391,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.12941909
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.6852609
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fc7a44c3f9c04c83c00decb219ff6, type: 3}
 --- !u!4 &1179723362 stripped
@@ -19713,36 +19768,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: JimForGame
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hey there... uh, chief.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: PongMiniGame
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigame
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19847,6 +19872,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hey there... uh, chief.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: PongMiniGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigame
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -20142,6 +20197,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.27295706
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1339604
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568082555348929700, guid: 506fc7a44c3f9c04c83c00decb219ff6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.69434345
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 506fc7a44c3f9c04c83c00decb219ff6, type: 3}
@@ -20711,6 +20776,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10923158
+      objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.30057445
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bbae8f841ee33489c6866e271f3147, type: 3}
 --- !u!4 &1261622069 stripped
@@ -20754,11 +20829,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kelly
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Oh my god! It's the new guy!
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -20864,6 +20934,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Oh my god! It's the new guy!
       objectReference: {fileID: 0}
     - target: {fileID: 2546140206627119507, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
@@ -22115,6 +22190,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.099984154
+      objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.2820796
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bbae8f841ee33489c6866e271f3147, type: 3}
 --- !u!4 &1374698578 stripped
@@ -22186,46 +22271,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Leisure Suit Larry Game
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Need general proximity speech
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: LeisureSuitLarry
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameProximityText
-      value: Oh no! Gotta catch the chili!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: MinigameDetector
-      value: 
-      objectReference: {fileID: 1173886793}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22331,6 +22376,46 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Need general proximity speech
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: LeisureSuitLarry
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigame
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameProximityText
+      value: Oh no! Gotta catch the chili!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: MinigameDetector
+      value: 
+      objectReference: {fileID: 1173886793}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -25211,21 +25296,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Oscar
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hey there.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25331,6 +25401,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419377139494, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hey there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -25372,11 +25462,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 6909e2c6f1787844581b5f272d1c56a8, type: 2}
-    - target: {fileID: 1194892419377139494, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Text
@@ -27039,6 +27124,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10363414
+      objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31030798
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bbae8f841ee33489c6866e271f3147, type: 3}
 --- !u!4 &1812787263 stripped
@@ -28292,6 +28387,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27295706
       objectReference: {fileID: 0}
+    - target: {fileID: 101128988472920862, guid: 44938bbbc2d5c3240aa980e402843e37,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44938bbbc2d5c3240aa980e402843e37, type: 3}
 --- !u!4 &1906876698 stripped
@@ -28750,6 +28850,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.27295706
+      objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10363396
+      objectReference: {fileID: 0}
+    - target: {fileID: 298922165625545766, guid: 98bbae8f841ee33489c6866e271f3147,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.28937918
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98bbae8f841ee33489c6866e271f3147, type: 3}
@@ -29706,76 +29816,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Do not interrupt my extreme work efficiency.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameChart
-      value: 
-      objectReference: {fileID: 425092054}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameBlockName
-      value: DwightFireMinigameStart
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigameText
-      value: Hey intern, come here for a second.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: readyToStartMinigame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameProximityText
-      value: Intern! Come.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: popupText
-      value: 
-      objectReference: {fileID: 946972500}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameDay
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: minigameNoMedal
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: win
-      value: 
-      objectReference: {fileID: 1560550178}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: winSound
-      value: 
-      objectReference: {fileID: 1560550178}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: scoreOneStar
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29881,6 +29921,81 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1194892419377139494, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Do not interrupt my extreme work efficiency.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameChart
+      value: 
+      objectReference: {fileID: 425092054}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameBlockName
+      value: DwightFireMinigameStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigameText
+      value: Hey intern, come here for a second.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: readyToStartMinigame
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameProximityText
+      value: Intern! Come.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: popupText
+      value: 
+      objectReference: {fileID: 946972500}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameDay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: minigameNoMedal
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: win
+      value: 
+      objectReference: {fileID: 1560550178}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: winSound
+      value: 
+      objectReference: {fileID: 1560550178}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: scoreOneStar
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Sprite
@@ -29907,11 +30022,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: aaee8861791366140b14974aba3af6d2, type: 2}
-    - target: {fileID: 1194892419377139494, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419892720609, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_Text
@@ -29927,16 +30037,6 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: a85e8ced2c782ae4ba588c1707ebcc97, type: 2}
-    - target: {fileID: 2818186149401761768, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678599, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: m_Radius
-      value: 0.44
-      objectReference: {fileID: 0}
     - target: {fileID: 8020941057428765361, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_IsActive
@@ -29946,6 +30046,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818186149401761768, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678599, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.44
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ff03247ceb331419c1e01a5736c36b, type: 3}
@@ -31266,21 +31376,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jim
       objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: ProximitySpeech
-      value: Hey there... uh, chief.
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkFlowchart
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
-        type: 3}
-      propertyPath: barkBlockName
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 1194892419139678603, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -31385,6 +31480,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: ProximitySpeech
+      value: Hey there... uh, chief.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkFlowchart
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1194892419139678592, guid: 63ff03247ceb331419c1e01a5736c36b,
+        type: 3}
+      propertyPath: barkBlockName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1194892419377139488, guid: 63ff03247ceb331419c1e01a5736c36b,
         type: 3}
